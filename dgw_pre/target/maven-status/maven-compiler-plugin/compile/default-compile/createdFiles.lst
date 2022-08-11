@@ -1,0 +1,7 @@
+com\i2i\App.class
+com\i2i\ServiceGenerator$Service.class
+com\i2i\AmountGenerator.class
+com\i2i\LocationGenerator$Location.class
+com\i2i\MSISDNGenerator.class
+com\i2i\LocationGenerator.class
+com\i2i\ServiceGenerator.class
