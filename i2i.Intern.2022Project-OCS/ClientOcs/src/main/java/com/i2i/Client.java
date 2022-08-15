@@ -7,6 +7,7 @@ import com.typesafe.config.ConfigFactory;
 import com.typesafe.config.ConfigFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.com.i2i.intern.EyeCell.HazelcastConfiguration;
 
 import java.util.Random;
 
@@ -18,6 +19,11 @@ public class Client {
 
         // Client actor
         ActorRef client = system.actorOf(Props.create(ClientActor.class));
+
+        HazelcastConfiguration hazelcastConfiguration = new HazelcastConfiguration();
+        hazelcastConfiguration.initConnection("34.77.94.205", "34.77.94.205:5702");
+        String msisdn = hazelcastConfiguration.getMsisdn(444);
+        // System.out.println("KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK"+msisdn);
 
 
         /*MSISDNGenerator msisdnGenerator = new MSISDNGenerator();
@@ -38,7 +44,7 @@ public class Client {
             logger.error("Service: " + service);
             logger.fatal("Amount: " + amount);*/
             //client.tell("DoCalcs", ActorRef.noSender());
-            client.tell("", ActorRef.noSender());
+            client.tell(msisdn, ActorRef.noSender());
         }
 
         // Send a Calc job
