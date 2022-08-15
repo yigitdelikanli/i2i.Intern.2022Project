@@ -1,5 +1,3 @@
-@@ -1,50 +1,50 @@
-# Project_Logo.png
 <p align="center">
 <img src="Project_Logo.png" width="300">
  </p>
