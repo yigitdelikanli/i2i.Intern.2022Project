@@ -8,9 +8,10 @@ import java.io.IOException;
 
 public class VoltDbHelper {
 
+    private final String dbUrl ="34.159.58.171" ;
+    private final int port=49153;
+
     public Client client() throws IOException {
-        String dbUrl="34.159.58.171" ;
-        int port=49153;
         Client client ;
         ClientConfig config;
         config = new ClientConfig ( "advent",  "xYZZy");

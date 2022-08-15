@@ -11,7 +11,6 @@ public class BalanceForUser {
         this.voice = voice;
     }
     public BalanceForUser(){
-
     }
 
     public long getData() {
@@ -25,7 +24,6 @@ public class BalanceForUser {
     public long getSms() {
         return sms;
     }
-
     public void setSms(long sms) {
         this.sms = sms;
     }
@@ -33,7 +31,6 @@ public class BalanceForUser {
     public long getVoice() {
         return voice;
     }
-
     public void setVoice(long voice) {
         this.voice = voice;
     }

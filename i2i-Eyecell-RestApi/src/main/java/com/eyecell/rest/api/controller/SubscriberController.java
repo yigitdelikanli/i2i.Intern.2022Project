@@ -1,6 +1,7 @@
 package com.eyecell.rest.api.controller;
 
 import com.eyecell.rest.api.repository.SubscriberRepository;
+import com.eyecell.rest.api.resource.NewSubscriber;
 import com.eyecell.rest.api.resource.Subscriber;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -25,14 +26,14 @@ public class SubscriberController {
 
     @GetMapping("/registerOracle")
     @ApiOperation(value = "Create new user in OracleDb")
-    public String addSubscriberOracleDb (long telNo, String name, String surname, String email, String _password) throws SQLException {
-        return subscriberRepository.addSubscriberOracleDb(telNo, name, surname, email, _password);
+    public String addSubscriberOracleDb (NewSubscriber newSubscriber) throws SQLException {
+        return subscriberRepository.addSubscriberOracleDb(newSubscriber);
 
     }
 
     @GetMapping("/registerVoltDb")
     @ApiOperation(value = "Create new user in VoltDb")
-    public String addSubscriberVoltDb(String MSISDN, String name, String surname, String email, String password,int packageId) throws SQLException, IOException, ProcCallException {
-        return subscriberRepository.addSubscriberVoltDb(MSISDN, name, surname, email, password,packageId);
+    public String addSubscriberVoltDb(NewSubscriber newSubscriber) throws SQLException, IOException, ProcCallException {
+        return subscriberRepository.addSubscriberVoltDb(newSubscriber);
     }
 }

@@ -7,20 +7,17 @@ import java.util.List;
 import java.util.TimeZone;
 
 public class DbHelper {
-    static String userName ;
-    static String password ;
-    static String dbUrl ;
+    private final String username = "eyecell";
+    private final String password = "12345";
+    private final String dBurl = "jdbc:oracle:thin:@34.77.240.18:49161:xe";
 
 
-    public DbHelper(String _userName,String _password, String _dbUrl){
+    public DbHelper(){
         TimeZone timeZone = TimeZone.getTimeZone("Asia/Kolkata");
         TimeZone.setDefault(timeZone);
-        this.userName = _userName;
-        this.password = _password;
-        this.dbUrl = _dbUrl;
     }
     public Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(dbUrl,userName,password);
+        return DriverManager.getConnection(dBurl,username,password);
     }
 
 

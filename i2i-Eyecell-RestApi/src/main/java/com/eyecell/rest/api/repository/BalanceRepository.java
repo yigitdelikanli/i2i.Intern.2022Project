@@ -11,11 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BalanceRepository {
-    private String username = "eyecell";
-    private String password = "12345";
-    private String DBurl = "jdbc:oracle:thin:@34.77.240.18:49161:xe";
-
-    DbHelper dbHelper = new DbHelper(username, password, DBurl);
+    DbHelper dbHelper = new DbHelper();
 
     public List<Balance> getBalances() throws SQLException {
         Connection connection = dbHelper.getConnection();

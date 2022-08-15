@@ -9,15 +9,10 @@ import java.util.List;
 
 public class PackageRepository {
 
-    private String username = "eyecell";
-    private String password = "12345";
-    private String DBurl = "jdbc:oracle:thin:@34.77.240.18:49161:xe";
-
-    DbHelper dbHelper = new DbHelper(username, password, DBurl);
 
 
     public List<Package> packageList () throws SQLException {
-        DbHelper dbHelper = new DbHelper(username,password,DBurl);
+        DbHelper dbHelper = new DbHelper();
         Connection connection = dbHelper.getConnection();
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery("select * from PACKAGE");
@@ -34,7 +29,7 @@ public class PackageRepository {
         return packageList;
     }
 
-    public String aPackage (String packageName, long amountVoice,long amountInternet,long amountSMS,long duration) throws SQLException {
+    /*public String aPackage (String packageName, long amountVoice,long amountInternet,long amountSMS,long duration) throws SQLException {
         DbHelper dbHelper = new DbHelper(username,password,DBurl);
         Connection connection = dbHelper.getConnection();
         String sql = "{call package_package.insertPackage(?,?,?,?,?)}";
@@ -50,7 +45,7 @@ public class PackageRepository {
         connection.close();
         return packageName +" "+ amountVoice +" "+amountInternet+" "+amountSMS+" "+ duration + " : added";
 
-    }
+    }*/
 
 
 }

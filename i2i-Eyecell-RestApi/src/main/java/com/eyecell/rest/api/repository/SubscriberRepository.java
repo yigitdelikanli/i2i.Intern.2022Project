@@ -2,6 +2,7 @@ package com.eyecell.rest.api.repository;
 
 import com.eyecell.rest.api.dbhelper.DbHelper;
 import com.eyecell.rest.api.dbhelper.VoltDbHelper;
+import com.eyecell.rest.api.resource.NewSubscriber;
 import com.eyecell.rest.api.resource.Subscriber;
 import org.voltdb.VoltTable;
 import org.voltdb.client.*;
@@ -10,16 +11,11 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import org.com.i2i.intern.EyeCell.HazelcastConfiguration;
 
 public class SubscriberRepository {
-    private int idCounter = 4;
-
-    private String username = "eyecell";
-    private String password = "12345";
-    private String DBurl = "jdbc:oracle:thin:@34.77.240.18:49161:xe";
-
-    DbHelper dbHelper = new DbHelper(username, password, DBurl);
-
+    private int idCounter = 1;
+    DbHelper dbHelper = new DbHelper();
 
     public List<Subscriber> getSubscribers() throws SQLException {
         Connection connection = dbHelper.getConnection();
@@ -42,32 +38,47 @@ public class SubscriberRepository {
 
     }
 
-    public String addSubscriberOracleDb(long telNo, String name, String surname, String email, String password) throws SQLException {
-        DbHelper dbHelper = new DbHelper(username, this.password, DBurl);
+    public String addSubscriberOracleDb(NewSubscriber newSubscriber) throws SQLException {
+        DbHelper dbHelper = new DbHelper();
         Connection connection = dbHelper.getConnection();
         String sql = "{call package_subscriber.create_subscriber(?,?,?,?,?,?)}";
         CallableStatement callableStatement = connection.prepareCall(sql);
 
-        callableStatement.setLong(1, telNo);
-        callableStatement.setString(2, name);
-        callableStatement.setString(3, surname);
-        callableStatement.setString(4, email);
-        callableStatement.setString(5, password);
-        callableStatement.setString(6, "Eyecell 10GB");
+        callableStatement.setLong(1, newSubscriber.getTelNo());
+        callableStatement.setInt(2, newSubscriber.getPackageId());
+        callableStatement.setString(3, newSubscriber.getName());
+        callableStatement.setString(4, newSubscriber.getSurname());
+        callableStatement.setString(5, newSubscriber.getPassword());
+        callableStatement.setString(6, newSubscriber.getEmail());
 
         callableStatement.execute();
         connection.close();
-        return "added";
+        return "user added";
     }
 
-    public String addSubscriberVoltDb(String MSISDN, String name, String surname, String email, String password, int packageId) throws SQLException, IOException, ProcCallException {
+    public String addSubscriberVoltDb(NewSubscriber newSubscriber) throws SQLException, IOException, ProcCallException {
 
         VoltDbHelper voltDbHelper = new VoltDbHelper();
         Client client = voltDbHelper.client();
-        client.callProcedure("UserInsert",idCounter,MSISDN,name,surname,email,password,packageId);
+        client.callProcedure("UserInsert",
+                idCounter,
+                newSubscriber.getTelNo(),
+                newSubscriber.getName(),
+                newSubscriber.getSurname(),
+                newSubscriber.getEmail(),
+                newSubscriber.getPassword(),
+                newSubscriber.getPackageId());
+
         idCounter++;
 
+        /*HazelcastConfiguration hazelcastConfiguration = new HazelcastConfiguration();
+        hazelcastConfiguration.initConnection("34.77.94.205","34.77.94.205:5702");
+        hazelcastConfiguration.putMsisdn(idCounter,MSISDN);*/
+
+
         return "User added";
+
+
     }
 
 

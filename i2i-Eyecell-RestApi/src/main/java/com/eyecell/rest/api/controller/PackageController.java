@@ -27,10 +27,10 @@ public class PackageController {
         return packageRepository.packageList();
     }
 
-    @GetMapping("/addpackage")
+    /*@GetMapping("/addpackage")
     @ApiOperation(value = "Add a package")
     public String aPackage (String packageName, long amountVoice,long amountInternet,long amountSMS,long duration) throws SQLException {
         return packageRepository.aPackage(packageName, amountVoice, amountInternet, amountSMS, duration);
-    }
+    }*/
 
 }
