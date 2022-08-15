@@ -31,16 +31,16 @@ public class ClientActor  extends UntypedActor {
             Message.Result result = (Message.Result) message;
             log.info("Got result back from calculator: {}", result.getResult());
         }
-        else if (message.equals("")){
+        else{
             String msisdn = msisdnGenerator.getMsisdn();
             String location = locationGenerator.getLocation();
             String service = serviceGenerator.getService();
             int amount = amountGenerator.getAmount(service);
-            logger.info("MSISDN: " + msisdn);
+            logger.info("MSISDN: " + message.toString());
             logger.warn("Location: " + location);
             logger.error("Service: " + service);
             logger.fatal("Amount: " + amount);
-            selection.tell(new Message.Usage(msisdn, location, service, amount), getSelf());
+            selection.tell(new Message.Usage(message.toString(), location, service, amount), getSelf());
         }
 
 
