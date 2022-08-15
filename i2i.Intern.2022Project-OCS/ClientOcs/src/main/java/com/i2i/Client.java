@@ -20,25 +20,25 @@ public class Client {
         ActorRef client = system.actorOf(Props.create(ClientActor.class));
 
 
-        MSISDNGenerator msisdnGenerator = new MSISDNGenerator();
+        /*MSISDNGenerator msisdnGenerator = new MSISDNGenerator();
         LocationGenerator locationGenerator = new LocationGenerator();
         ServiceGenerator serviceGenerator = new ServiceGenerator();
-        AmountGenerator amountGenerator = new AmountGenerator();
+        AmountGenerator amountGenerator = new AmountGenerator();*/
         Random rand = new Random();
         while(true) {
             if(rand.nextInt()%100000000!=0){ //randomly select 1 of 5 cycles
                 continue;
             }
-            String msisdn = msisdnGenerator.getMsisdn();
+            /*String msisdn = msisdnGenerator.getMsisdn();
             String location = locationGenerator.getLocation();
             String service = serviceGenerator.getService();
             int amount = amountGenerator.getAmount(service);
             logger.info("MSISDN: " + msisdn);
             logger.warn("Location: " + location);
             logger.error("Service: " + service);
-            logger.fatal("Amount: " + amount);
+            logger.fatal("Amount: " + amount);*/
             //client.tell("DoCalcs", ActorRef.noSender());
-            client.tell(msisdn, ActorRef.noSender());
+            client.tell("", ActorRef.noSender());
         }
 
         // Send a Calc job
