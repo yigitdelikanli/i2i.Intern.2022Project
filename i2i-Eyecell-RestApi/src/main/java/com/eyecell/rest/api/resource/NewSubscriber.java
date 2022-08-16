@@ -1,15 +1,15 @@
 package com.eyecell.rest.api.resource;
 
 public class NewSubscriber {
-    private long telNo;
+    private String MSISDN;
     private int packageId;
     private String name;
     private String surname;
     private String password;
     private String email;
 
-    public NewSubscriber(long telNo, int packageId, String name, String surname, String password, String email) {
-        this.telNo = telNo;
+    public NewSubscriber(String MSISDN, int packageId, String name, String surname, String password, String email) {
+        this.MSISDN = MSISDN;
         this.packageId = packageId;
         this.name = name;
         this.surname = surname;
@@ -17,12 +17,12 @@ public class NewSubscriber {
         this.email = email;
     }
 
-    public long getTelNo() {
-        return telNo;
+    public String getMSISDN() {
+        return MSISDN;
     }
 
-    public void setTelNo(long telNo) {
-        this.telNo = telNo;
+    public void setMSISDN(String MSISDN) {
+        this.MSISDN = MSISDN;
     }
 
     public int getPackageId() {

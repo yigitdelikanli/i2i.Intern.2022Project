@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Subscriber {
     private final long subscriberId;
-    private final long msisdn;
+    private final String msisdn;
     private final String name;
     private final String surname;
     private final String email;
@@ -12,9 +12,9 @@ public class Subscriber {
     private final Date sDate;
     private final String status;
 
-    public Subscriber(long subscriberId, long msisdn, String name, String surname, String email, String password, Date sDate, String status) {
+    public Subscriber(long subscriberId, String MSISDN, String name, String surname, String email, String password, Date sDate, String status) {
         this.subscriberId = subscriberId;
-        this.msisdn = msisdn;
+        this.msisdn = MSISDN;
         this.name = name;
         this.surname = surname;
         this.email = email;
@@ -31,7 +31,7 @@ public class Subscriber {
         return subscriberId;
     }
 
-    public long getMsisdn() {
+    public String getMsisdn() {
         return msisdn;
     }
 

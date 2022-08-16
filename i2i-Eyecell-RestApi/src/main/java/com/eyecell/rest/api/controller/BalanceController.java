@@ -1,11 +1,9 @@
 package com.eyecell.rest.api.controller;
 
-
 import com.eyecell.rest.api.repository.BalanceForUserRepository;
 import com.eyecell.rest.api.repository.BalanceRepository;
 import com.eyecell.rest.api.resource.Balance;
 import com.eyecell.rest.api.resource.BalanceForUser;
-import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

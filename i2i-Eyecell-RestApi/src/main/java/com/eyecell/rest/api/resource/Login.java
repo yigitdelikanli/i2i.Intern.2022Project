@@ -1,20 +1,23 @@
 package com.eyecell.rest.api.resource;
 
 public class Login {
-    private String telNo;
+    private String MSISDN;
     private String password;
 
-    public Login(String telNo, String password) {
-        this.telNo = telNo;
+    public Login(String MSISDN, String password) {
+        this.MSISDN = MSISDN;
         this.password = password;
     }
 
-    public String getTelNo() {
-        return telNo;
+    public String getMSISDN() {
+        return MSISDN;
     }
 
-    public void setTelNo(String telNo) {
-        this.telNo = telNo;
+    public Login() {
+    }
+
+    public void setMSISDN(String MSISDN) {
+        this.MSISDN = MSISDN;
     }
 
     public String getPassword() {

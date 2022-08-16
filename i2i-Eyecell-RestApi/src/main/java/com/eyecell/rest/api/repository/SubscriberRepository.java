@@ -2,20 +2,19 @@ package com.eyecell.rest.api.repository;
 
 import com.eyecell.rest.api.dbhelper.DbHelper;
 import com.eyecell.rest.api.dbhelper.VoltDbHelper;
+import com.eyecell.rest.api.encryption.Encryption;
 import com.eyecell.rest.api.resource.NewSubscriber;
 import com.eyecell.rest.api.resource.Subscriber;
-import org.voltdb.VoltTable;
 import org.voltdb.client.*;
-
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import org.com.i2i.intern.EyeCell.HazelcastConfiguration;
 
 public class SubscriberRepository {
     private int idCounter = 1;
     DbHelper dbHelper = new DbHelper();
+    Encryption encryption = new Encryption();
 
     public List<Subscriber> getSubscribers() throws SQLException {
         Connection connection = dbHelper.getConnection();
@@ -25,7 +24,7 @@ public class SubscriberRepository {
         while (resultSet.next()) {
             subscriberList.add(new Subscriber(
                     resultSet.getLong("SUBSC_ID"),
-                    resultSet.getLong("MSISDN"),
+                    resultSet.getString("MSISDN"),
                     resultSet.getString("NAME"),
                     resultSet.getString("SURNAME"),
                     resultSet.getString("EMAIL"),
@@ -43,13 +42,14 @@ public class SubscriberRepository {
         Connection connection = dbHelper.getConnection();
         String sql = "{call package_subscriber.create_subscriber(?,?,?,?,?,?)}";
         CallableStatement callableStatement = connection.prepareCall(sql);
+        String encryptedPassword = encryption.encrypt(newSubscriber.getPassword());
 
-        callableStatement.setLong(1, newSubscriber.getTelNo());
-        callableStatement.setInt(2, newSubscriber.getPackageId());
-        callableStatement.setString(3, newSubscriber.getName());
-        callableStatement.setString(4, newSubscriber.getSurname());
-        callableStatement.setString(5, newSubscriber.getPassword());
-        callableStatement.setString(6, newSubscriber.getEmail());
+        callableStatement.setString(1, newSubscriber.getMSISDN());
+        callableStatement.setString(2, newSubscriber.getName());
+        callableStatement.setString(3, newSubscriber.getSurname());
+        callableStatement.setString(4, newSubscriber.getEmail());
+        callableStatement.setString(5, encryptedPassword);
+        callableStatement.setInt(6, newSubscriber.getPackageId());
 
         callableStatement.execute();
         connection.close();
@@ -60,13 +60,14 @@ public class SubscriberRepository {
 
         VoltDbHelper voltDbHelper = new VoltDbHelper();
         Client client = voltDbHelper.client();
+        String encryptedPassword = encryption.encrypt(newSubscriber.getPassword());
         client.callProcedure("UserInsert",
                 idCounter,
-                newSubscriber.getTelNo(),
+                newSubscriber.getMSISDN(),
                 newSubscriber.getName(),
                 newSubscriber.getSurname(),
                 newSubscriber.getEmail(),
-                newSubscriber.getPassword(),
+                encryptedPassword,
                 newSubscriber.getPackageId());
 
         idCounter++;

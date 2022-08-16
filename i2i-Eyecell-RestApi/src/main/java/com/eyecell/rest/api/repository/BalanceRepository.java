@@ -33,6 +33,5 @@ public class BalanceRepository {
         return balances;
 
     }
-
 }
 
