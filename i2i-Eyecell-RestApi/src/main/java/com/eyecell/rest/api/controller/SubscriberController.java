@@ -14,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/subs")
+@CrossOrigin
 public class SubscriberController {
     SubscriberRepository subscriberRepository = new SubscriberRepository();
 
@@ -24,16 +25,14 @@ public class SubscriberController {
         return subscriberRepository.getSubscribers();
     }
 
-    @GetMapping("/registerOracle")
-    @ApiOperation(value = "Create new user in OracleDb")
-    public String addSubscriberOracleDb (NewSubscriber newSubscriber) throws SQLException {
-        return subscriberRepository.addSubscriberOracleDb(newSubscriber);
+    @GetMapping("/register")
+    @ApiOperation(value = "Create new user")
+    public NewSubscriber addSubscriber (NewSubscriber newSubscriber) throws SQLException, IOException, ProcCallException {
+        subscriberRepository.addSubscriberOracleDb(newSubscriber);
+        subscriberRepository.addSubscriberVoltDb(newSubscriber);
+        return newSubscriber;
+
 
     }
 
-    @GetMapping("/registerVoltDb")
-    @ApiOperation(value = "Create new user in VoltDb")
-    public String addSubscriberVoltDb(NewSubscriber newSubscriber) throws SQLException, IOException, ProcCallException {
-        return subscriberRepository.addSubscriberVoltDb(newSubscriber);
-    }
 }

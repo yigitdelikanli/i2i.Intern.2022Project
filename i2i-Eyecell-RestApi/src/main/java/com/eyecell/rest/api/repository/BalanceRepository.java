@@ -1,6 +1,6 @@
 package com.eyecell.rest.api.repository;
 
-import com.eyecell.rest.api.dbhelper.DbHelper;
+import com.eyecell.rest.api.dbhelper.OracleDbHelper;
 import com.eyecell.rest.api.resource.Balance;
 
 import java.sql.Connection;
@@ -11,10 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BalanceRepository {
-    DbHelper dbHelper = new DbHelper();
+    OracleDbHelper oracleDbHelper = new OracleDbHelper();
 
     public List<Balance> getBalances() throws SQLException {
-        Connection connection = dbHelper.getConnection();
+        Connection connection = oracleDbHelper.getConnection();
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery("select * from BALANCE");
         List<Balance> balances = new ArrayList<Balance>();

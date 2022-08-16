@@ -1,6 +1,6 @@
 package com.eyecell.rest.api.repository;
 
-import com.eyecell.rest.api.dbhelper.DbHelper;
+import com.eyecell.rest.api.dbhelper.OracleDbHelper;
 import com.eyecell.rest.api.dbhelper.VoltDbHelper;
 import com.eyecell.rest.api.encryption.Encryption;
 import com.eyecell.rest.api.resource.Login;
@@ -18,19 +18,39 @@ public class LoginRepository {
 
     /** OracleDB Login Check **/
     public ResponseEntity loginCheck(@PathVariable String MSISDN,@PathVariable String password) throws SQLException {
-        DbHelper dbHelper = new DbHelper();
-        Connection connection = dbHelper.getConnection();
+        Login[] logins = {new Login(MSISDN,password)};
+        OracleDbHelper oracleDbHelper = new OracleDbHelper();
+        Connection connection = oracleDbHelper.getConnection();
         String encryptedPassword = encryption.encrypt(password);
 
         CallableStatement callableStatement = connection.prepareCall("{? = call package_subscriber.login(?,?)}");
         callableStatement.registerOutParameter(1, Types.INTEGER);
-        /*long telNo = Long.parseLong(login.getTelNo());*/
         callableStatement.setString(2,MSISDN);
         callableStatement.setString(3,encryptedPassword);
         callableStatement.execute();
-        int ret = callableStatement.getInt(1);
+        int checkUser = callableStatement.getInt(1);
 
-        if (ret ==1 ){
+        if (checkUser ==1 ){
+            return new ResponseEntity<>(logins, HttpStatus.OK);
+
+        }
+        else
+            return new ResponseEntity<>(null,HttpStatus.BAD_REQUEST);
+    }
+
+    public ResponseEntity loginCheckAndroid(@PathVariable String MSISDN,@PathVariable String password) throws SQLException {
+        OracleDbHelper oracleDbHelper = new OracleDbHelper();
+        Connection connection = oracleDbHelper.getConnection();
+        String encryptedPassword = encryption.encrypt(password);
+
+        CallableStatement callableStatement = connection.prepareCall("{? = call package_subscriber.login(?,?)}");
+        callableStatement.registerOutParameter(1, Types.INTEGER);
+        callableStatement.setString(2,MSISDN);
+        callableStatement.setString(3,encryptedPassword);
+        callableStatement.execute();
+        int checkUser = callableStatement.getInt(1);
+
+        if (checkUser ==1 ){
             return new ResponseEntity<>(new Login(MSISDN,password), HttpStatus.OK);
 
         }

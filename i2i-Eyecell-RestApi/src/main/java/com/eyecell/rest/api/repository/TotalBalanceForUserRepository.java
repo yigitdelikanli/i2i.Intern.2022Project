@@ -10,7 +10,6 @@ import org.voltdb.client.ProcCallException;
 import java.io.IOException;
 
 public class TotalBalanceForUserRepository {
-
     public TotalBalanceForUser totalBalanceForUser(String MSISDN) throws IOException, ProcCallException {
         TotalBalanceForUser totalBalanceForUser = new TotalBalanceForUser();
         VoltDbHelper voltDbHelper = new VoltDbHelper();
@@ -24,6 +23,5 @@ public class TotalBalanceForUserRepository {
         totalBalanceForUser.setSms(voltTable.getLong(4));
 
         return totalBalanceForUser;
-
     }
 }

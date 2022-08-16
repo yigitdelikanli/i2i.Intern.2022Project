@@ -1,19 +1,17 @@
 package com.eyecell.rest.api.repository;
 
-import com.eyecell.rest.api.dbhelper.DbHelper;
+import com.eyecell.rest.api.dbhelper.OracleDbHelper;
 import com.eyecell.rest.api.resource.Package;
+import com.eyecell.rest.api.resource.PackageList;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class PackageRepository {
-
-
-
     public List<Package> packageList () throws SQLException {
-        DbHelper dbHelper = new DbHelper();
-        Connection connection = dbHelper.getConnection();
+        OracleDbHelper oracleDbHelper = new OracleDbHelper();
+        Connection connection = oracleDbHelper.getConnection();
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery("select * from PACKAGE");
         List<Package> packageList = new ArrayList<Package>();
@@ -28,6 +26,23 @@ public class PackageRepository {
         connection.close();
         return packageList;
     }
+
+    public List<PackageList> packageLists () throws SQLException {
+
+        OracleDbHelper oracleDbHelper = new OracleDbHelper();
+        Connection connection = oracleDbHelper.getConnection();
+        Statement statement = connection.createStatement();
+        ResultSet resultSet = statement.executeQuery("select * from PACKAGE");
+        List<PackageList> packageLists = new ArrayList<PackageList>();
+        while (resultSet.next()) {
+            packageLists.add(new PackageList(resultSet.getLong("PACKAGE_ID"),
+                    resultSet.getString("PACKAGE_NAME")));
+        }
+        connection.close();
+        return  packageLists;
+
+    }
+
 
     /*public String aPackage (String packageName, long amountVoice,long amountInternet,long amountSMS,long duration) throws SQLException {
         DbHelper dbHelper = new DbHelper(username,password,DBurl);

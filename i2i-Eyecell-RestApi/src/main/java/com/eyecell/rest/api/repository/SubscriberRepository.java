@@ -1,10 +1,11 @@
 package com.eyecell.rest.api.repository;
 
-import com.eyecell.rest.api.dbhelper.DbHelper;
+import com.eyecell.rest.api.dbhelper.OracleDbHelper;
 import com.eyecell.rest.api.dbhelper.VoltDbHelper;
 import com.eyecell.rest.api.encryption.Encryption;
 import com.eyecell.rest.api.resource.NewSubscriber;
 import com.eyecell.rest.api.resource.Subscriber;
+import org.com.i2i.intern.EyeCell.HazelcastConfiguration;
 import org.voltdb.client.*;
 import java.io.IOException;
 import java.sql.*;
@@ -12,12 +13,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SubscriberRepository {
-    private int idCounter = 1;
-    DbHelper dbHelper = new DbHelper();
+
+    OracleDbHelper oracleDbHelper = new OracleDbHelper();
     Encryption encryption = new Encryption();
 
     public List<Subscriber> getSubscribers() throws SQLException {
-        Connection connection = dbHelper.getConnection();
+        Connection connection = oracleDbHelper.getConnection();
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery("select * from SUBSCRIBER");
         List<Subscriber> subscriberList = new ArrayList<Subscriber>();
@@ -37,9 +38,9 @@ public class SubscriberRepository {
 
     }
 
-    public String addSubscriberOracleDb(NewSubscriber newSubscriber) throws SQLException {
-        DbHelper dbHelper = new DbHelper();
-        Connection connection = dbHelper.getConnection();
+    public void addSubscriberOracleDb(NewSubscriber newSubscriber) throws SQLException {
+        OracleDbHelper oracleDbHelper = new OracleDbHelper();
+        Connection connection = oracleDbHelper.getConnection();
         String sql = "{call package_subscriber.create_subscriber(?,?,?,?,?,?)}";
         CallableStatement callableStatement = connection.prepareCall(sql);
         String encryptedPassword = encryption.encrypt(newSubscriber.getPassword());
@@ -53,16 +54,20 @@ public class SubscriberRepository {
 
         callableStatement.execute();
         connection.close();
-        return "user added";
     }
 
-    public String addSubscriberVoltDb(NewSubscriber newSubscriber) throws SQLException, IOException, ProcCallException {
+    public void addSubscriberVoltDb(NewSubscriber newSubscriber) throws SQLException, IOException, ProcCallException {
+        HazelcastConfiguration hazelcastConfiguration = new HazelcastConfiguration();
+        hazelcastConfiguration.initConnection("34.77.94.205","34.77.94.205:5702");
+
+        long subscriberId = hazelcastConfiguration.getMapSize()+1;
 
         VoltDbHelper voltDbHelper = new VoltDbHelper();
         Client client = voltDbHelper.client();
         String encryptedPassword = encryption.encrypt(newSubscriber.getPassword());
-        client.callProcedure("UserInsert",
-                idCounter,
+        client.callProcedure(
+                "UserInsert",
+                subscriberId,
                 newSubscriber.getMSISDN(),
                 newSubscriber.getName(),
                 newSubscriber.getSurname(),
@@ -70,17 +75,5 @@ public class SubscriberRepository {
                 encryptedPassword,
                 newSubscriber.getPackageId());
 
-        idCounter++;
-
-        /*HazelcastConfiguration hazelcastConfiguration = new HazelcastConfiguration();
-        hazelcastConfiguration.initConnection("34.77.94.205","34.77.94.205:5702");
-        hazelcastConfiguration.putMsisdn(idCounter,MSISDN);*/
-
-
-        return "User added";
-
-
     }
-
-
 }
