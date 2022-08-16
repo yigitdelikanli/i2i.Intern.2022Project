@@ -1,0 +1,4 @@
+com\i2i\App.class
+com\i2i\listenAkka\Listener.class
+com\i2i\publishKafka\Subscriber.class
+com\i2i\publishKafka\Publish.class
