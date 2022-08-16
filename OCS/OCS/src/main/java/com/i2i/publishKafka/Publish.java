@@ -1,16 +1,15 @@
 package com.i2i.publishKafka;
 
-import com.i2i.model.Subscriber;
+import com.i2i.model.SubscriberMessage;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Publish {
-    private List<Subscriber> subscribers;
+    private List<SubscriberMessage> subscribers;
 
-    public void sendSubscribers(String topicName){
+    public void sendMessage(String topicName){
 
-            //
+
     }
 
 }

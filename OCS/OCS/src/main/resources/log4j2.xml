@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Configuration status="WARN"  monitorInterval="6">
+<Configuration status="DEBUG"  monitorInterval="6">
 	<Properties>
 		<Property name="filename">./logs</Property>
 	</Properties>
@@ -16,7 +16,7 @@
 
 			<SizeBasedTriggeringPolicy size="1 MB" />
 		</RollingFile>
-		
+
 
 		<Console name="console" target="SYSTEM_OUT">
 			<PatternLayout
@@ -25,10 +25,11 @@
 	</Appenders>
 
 	<Loggers>
-		<Root level="info">
+		<Root level="DEBUG">
 			<AppenderRef ref="console" />
 			<AppenderRef ref="file" />
 		</Root>
+
 	</Loggers>
 
 </Configuration>
