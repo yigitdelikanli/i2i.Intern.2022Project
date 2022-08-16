@@ -1,0 +1,3 @@
+2022-08-16 13:57:46,475 INFO c.m.ProducerMethod [main] Producer created.
+2022-08-16 13:57:47,153 INFO c.m.usageMessageSerializer [main] Serializing...
+2022-08-16 13:58:08,616 INFO c.m.ProducerMethod [main] Message Send
