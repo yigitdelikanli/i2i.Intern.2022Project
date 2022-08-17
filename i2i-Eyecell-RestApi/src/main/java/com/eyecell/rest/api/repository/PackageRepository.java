@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PackageRepository {
-    public List<Package> packageList () throws SQLException {
+    public List<Package> packageList() throws SQLException {
         OracleDbHelper oracleDbHelper = new OracleDbHelper();
         Connection connection = oracleDbHelper.getConnection();
         Statement statement = connection.createStatement();
@@ -27,7 +27,7 @@ public class PackageRepository {
         return packageList;
     }
 
-    public List<PackageList> packageLists () throws SQLException {
+    public List<PackageList> packageLists() throws SQLException {
 
         OracleDbHelper oracleDbHelper = new OracleDbHelper();
         Connection connection = oracleDbHelper.getConnection();
@@ -39,28 +39,32 @@ public class PackageRepository {
                     resultSet.getString("PACKAGE_NAME")));
         }
         connection.close();
-        return  packageLists;
+        return packageLists;
 
     }
 
 
-    /*public String aPackage (String packageName, long amountVoice,long amountInternet,long amountSMS,long duration) throws SQLException {
-        DbHelper dbHelper = new DbHelper(username,password,DBurl);
-        Connection connection = dbHelper.getConnection();
-        String sql = "{call package_package.insertPackage(?,?,?,?,?)}";
-        CallableStatement callableStatement = connection.prepareCall(sql);
+    /**
+     *                                   ------Insert Package------ Depreciated
+     *
+     public String aPackage (String packageName, long amountVoice,long amountInternet,long amountSMS,long duration) throws SQLException {
+     DbHelper dbHelper = new DbHelper(username,password,DBurl);
+     Connection connection = dbHelper.getConnection();
+     String sql = "{call package_package.insertPackage(?,?,?,?,?)}";
+     CallableStatement callableStatement = connection.prepareCall(sql);
 
-        callableStatement.setString(1,packageName);
-        callableStatement.setLong(2,amountVoice);
-        callableStatement.setLong(3,amountInternet);
-        callableStatement.setLong(4,amountSMS);
-        callableStatement.setLong(5,duration);
+     callableStatement.setString(1,packageName);
+     callableStatement.setLong(2,amountVoice);
+     callableStatement.setLong(3,amountInternet);
+     callableStatement.setLong(4,amountSMS);
+     callableStatement.setLong(5,duration);
 
-        callableStatement.execute();
-        connection.close();
-        return packageName +" "+ amountVoice +" "+amountInternet+" "+amountSMS+" "+ duration + " : added";
+     callableStatement.execute();
+     connection.close();
+     return packageName +" "+ amountVoice +" "+amountInternet+" "+amountSMS+" "+ duration + " : added";
 
-    }*/
+     }
+     **/
 
 
 }

@@ -10,28 +10,27 @@ import java.sql.*;
 @RestController("/login")
 @CrossOrigin
 public class LoginController {
-
     LoginRepository loginRepository = new LoginRepository();
-    @CrossOrigin
+
     @GetMapping(value = "/{MSISDN}/{password}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity loginCheck(@PathVariable String MSISDN,@PathVariable String password) throws SQLException {
-            return loginRepository.loginCheck(MSISDN,password);
+    public ResponseEntity loginCheck(@PathVariable String MSISDN, @PathVariable String password) throws SQLException {
+        return loginRepository.loginCheck(MSISDN, password);
     }
 
-    @CrossOrigin
     @GetMapping(value = "/a/{MSISDN}/{password}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity loginCheckAndroid(@PathVariable String MSISDN,@PathVariable String password) throws SQLException {
-        return loginRepository.loginCheckAndroid(MSISDN,password);
+    public ResponseEntity loginCheckAndroid(@PathVariable String MSISDN, @PathVariable String password) throws SQLException {
+        return loginRepository.loginCheckAndroid(MSISDN, password);
     }
 
-    /** CheckUser in VoltDB  (Depreciated)
+    /**
+     *
+     *                              ------ CheckUser in VoltDB ------- (Depreciated)
 
-    @GetMapping("/login1")
-    @ApiOperation(value = "votlDb check")
-    public ResponseEntity<Login> loginCheck1(Login login) throws SQLException, IOException, ProcCallException {
-        return loginRepository.loginCheck1(login);
+     @GetMapping("/login1")
+     @ApiOperation(value = "votlDb check")
+     public ResponseEntity<Login> loginCheck1(Login login) throws SQLException, IOException, ProcCallException {
+     return loginRepository.loginCheck1(login);
 
-    }
-
+     }
      **/
 }

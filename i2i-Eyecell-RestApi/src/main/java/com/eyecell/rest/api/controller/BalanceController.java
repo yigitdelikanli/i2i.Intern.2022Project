@@ -1,10 +1,8 @@
 package com.eyecell.rest.api.controller;
 
-import com.eyecell.rest.api.repository.BalanceForUserRepository;
 import com.eyecell.rest.api.repository.BalanceRepository;
-import com.eyecell.rest.api.repository.TotalBalanceForUserRepository;
-import com.eyecell.rest.api.resource.Balance;
-import com.eyecell.rest.api.resource.BalanceForUser;
+import com.eyecell.rest.api.resource.TotalBalanceForAllUsers;
+import com.eyecell.rest.api.resource.RemainingBalanceForUser;
 import com.eyecell.rest.api.resource.TotalBalanceForUser;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.MediaType;
@@ -22,29 +20,25 @@ import java.util.List;
 @RequestMapping("/balance")
 @CrossOrigin
 public class BalanceController {
-
     BalanceRepository balanceRepository = new BalanceRepository();
 
     @GetMapping(value = "AllUsers", produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "get all Subcriber's balances")
-    public List<Balance> getBalances() throws SQLException {
+    public List<TotalBalanceForAllUsers> getBalances() throws SQLException {
         return balanceRepository.getBalances();
     }
 
-
     @GetMapping(value = "sBalance", produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "Get balances by MSISDN")
-    public BalanceForUser getBalanceForUser(String MSISDN) throws IOException, ProcCallException {
-        BalanceForUserRepository balanceForUserRepository = new BalanceForUserRepository();
+    public RemainingBalanceForUser getBalanceForUser(String MSISDN) throws IOException, ProcCallException {
+        BalanceRepository balanceForUserRepository = new BalanceRepository();
         return balanceForUserRepository.getBalanceByMSISDN(MSISDN);
     }
-
 
     @ApiOperation(value = "totalBalance")
     @GetMapping(value = "/TotalBalance", produces = MediaType.APPLICATION_JSON_VALUE)
     public TotalBalanceForUser totalBalanceForUser(String MSISDN) throws IOException, ProcCallException {
-        TotalBalanceForUserRepository totalBalanceForUserRepository = new TotalBalanceForUserRepository();
+        BalanceRepository totalBalanceForUserRepository = new BalanceRepository();
         return totalBalanceForUserRepository.totalBalanceForUser(MSISDN);
     }
-
 }

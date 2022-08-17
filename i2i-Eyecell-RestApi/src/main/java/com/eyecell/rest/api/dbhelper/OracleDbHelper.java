@@ -10,15 +10,14 @@ public class OracleDbHelper {
     private final String password = "12345";
     private final String dBurl = "jdbc:oracle:thin:@34.77.240.18:49161:xe";
 
-
-    public OracleDbHelper(){
+    public OracleDbHelper() {
         TimeZone timeZone = TimeZone.getTimeZone("Asia/Kolkata");
         TimeZone.setDefault(timeZone);
     }
-    public Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(dBurl,username,password);
-    }
 
+    public Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(dBurl, username, password);
+    }
 
 
 }

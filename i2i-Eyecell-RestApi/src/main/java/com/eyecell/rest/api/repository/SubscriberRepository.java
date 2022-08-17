@@ -58,9 +58,9 @@ public class SubscriberRepository {
 
     public void addSubscriberVoltDb(NewSubscriber newSubscriber) throws SQLException, IOException, ProcCallException {
         HazelcastConfiguration hazelcastConfiguration = new HazelcastConfiguration();
-        hazelcastConfiguration.initConnection("34.77.94.205","34.77.94.205:5702");
+        hazelcastConfiguration.initConnection("34.77.94.205", "34.77.94.205:5702");
 
-        long subscriberId = hazelcastConfiguration.getMapSize()+1;
+        long subscriberId = hazelcastConfiguration.getMapSize() + 1;
 
         VoltDbHelper voltDbHelper = new VoltDbHelper();
         Client client = voltDbHelper.client();

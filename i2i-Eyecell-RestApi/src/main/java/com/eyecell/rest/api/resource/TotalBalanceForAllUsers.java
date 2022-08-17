@@ -1,10 +1,8 @@
 package com.eyecell.rest.api.resource;
 
-import com.sun.java.swing.plaf.windows.WindowsBorders;
-
 import java.util.Date;
 
-public class Balance {
+public class TotalBalanceForAllUsers {
     private long SUBSC_ID;
     private long PACKAGE_ID;
     private long BAL_LVL_VOICE;
@@ -13,7 +11,7 @@ public class Balance {
     private Date SDATE;
     private Date EDATE;
 
-    public Balance(long SUBSC_ID, long PACKAGE_ID, long BAL_LVL_VOICE, long BAL_LVL_SMS, long BAL_LVL_DATA, Date SDATE, Date EDATE) {
+    public TotalBalanceForAllUsers(long SUBSC_ID, long PACKAGE_ID, long BAL_LVL_VOICE, long BAL_LVL_SMS, long BAL_LVL_DATA, Date SDATE, Date EDATE) {
         this.SUBSC_ID = SUBSC_ID;
         this.PACKAGE_ID = PACKAGE_ID;
         this.BAL_LVL_VOICE = BAL_LVL_VOICE;

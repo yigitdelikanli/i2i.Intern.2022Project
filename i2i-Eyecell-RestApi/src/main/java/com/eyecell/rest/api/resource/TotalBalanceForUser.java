@@ -2,9 +2,9 @@ package com.eyecell.rest.api.resource;
 
 public class TotalBalanceForUser {
 
-    private long data ;
-    private long sms ;
-    private long voice ;
+    private long data;
+    private long sms;
+    private long voice;
 
     public TotalBalanceForUser() {
     }

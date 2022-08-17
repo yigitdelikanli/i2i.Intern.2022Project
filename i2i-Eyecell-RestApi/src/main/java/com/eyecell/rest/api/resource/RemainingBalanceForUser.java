@@ -1,16 +1,17 @@
 package com.eyecell.rest.api.resource;
 
-public class BalanceForUser {
-    private long data ;
-    private long sms ;
-    private long voice ;
+public class RemainingBalanceForUser {
+    private long data;
+    private long sms;
+    private long voice;
 
-    public BalanceForUser(long data, long sms, long voice) {
+    public RemainingBalanceForUser(long data, long sms, long voice) {
         this.data = data;
         this.sms = sms;
         this.voice = voice;
     }
-    public BalanceForUser(){
+
+    public RemainingBalanceForUser() {
     }
 
     public long getData() {
@@ -24,6 +25,7 @@ public class BalanceForUser {
     public long getSms() {
         return sms;
     }
+
     public void setSms(long sms) {
         this.sms = sms;
     }
@@ -31,6 +33,7 @@ public class BalanceForUser {
     public long getVoice() {
         return voice;
     }
+
     public void setVoice(long voice) {
         this.voice = voice;
     }

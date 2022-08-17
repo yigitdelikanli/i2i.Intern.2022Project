@@ -43,7 +43,9 @@ public class Subscriber {
         return surname;
     }
 
-    public String getEmail() {return email;}
+    public String getEmail() {
+        return email;
+    }
 
     public Date getsDate() {
         return sDate;
