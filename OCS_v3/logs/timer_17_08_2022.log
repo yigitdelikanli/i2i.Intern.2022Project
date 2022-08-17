@@ -1,2 +1,9 @@
-12:40:41.224 [main] INFO  App - Work
-12:42:52.062 [main] INFO  com.i2i.internship.eyecell.App - Work
+16:22:27.820 [main] INFO  com.i2i.internship.eyecell.App - Sending data to Kafka
+16:25:43.500 [main] INFO  com.i2i.internship.eyecell.App - Sending data to Kafka
+16:27:58.716 [main] INFO  com.i2i.internship.eyecell.App - Sending data to Kafka
+16:29:29.827 [main] INFO  com.i2i.internship.eyecell.App - Sending data to Kafka
+16:29:30.418 [main] INFO  com.i2i.internship.eyeCell.kafka.method.ProducerMethod - Producer created.
+16:29:30.984 [main] INFO  com.i2i.internship.eyeCell.kafka.modul.UsageMessageSerializer - Serializing...
+16:29:31.297 [main] INFO  com.i2i.internship.eyeCell.kafka.method.ProducerMethod - Message Send
+16:29:31.300 [main] INFO  com.i2i.internship.eyecell.App - Work
+17:12:37.379 [main] INFO  com.i2i.internship.eyecell.App - Work

@@ -3,10 +3,10 @@ package com.i2i.internship.eyecell.listenAkka;
 import akka.actor.UntypedActor;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
+import com.i2i.internship.eyeCell.kafka.method.ProducerMethod;
+import com.i2i.internship.eyeCell.kafka.modul.UsageMessage;
 import com.i2i.internship.eyecell.Message;
 import com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation;
-import com.method.ProducerMethod;
-import com.modul.usageMessage;
 
 import java.util.concurrent.ExecutionException;
 
@@ -48,15 +48,13 @@ public class Listener extends UntypedActor {
 
     public void kafkaSender(String MSISDN, String service ,int amount){
 
-        usageMessage message = new usageMessage();
+        UsageMessage message = new UsageMessage();
 
         message.setMsisdn(MSISDN);
         message.setUsedAmount(amount);
         message.setUsedService(service);
 
         log.info("Sending data to Kafka");
-
-
         try {
             ProducerMethod.runProducer(message);
         } catch (ExecutionException e) {

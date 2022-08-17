@@ -1,5 +1,6 @@
 package com.i2i.internship.eyecell.parseXml;
 
+import com.i2i.internship.eyecell.config.OCSConfig;
 import com.i2i.internship.eyecell.model.Service;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,7 +23,7 @@ public class ParseXML {
     private Logger logger = LogManager.getLogger(ParseXML.class);
     private Map<String, Service> serviceMap = new HashMap<>();
     private DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-    private Document document = builder.parse(new File("charging.xml"));
+    private Document document = builder.parse(new File(OCSConfig.getChargingFilePath())); //"charging.xml"
 
     public ParseXML() throws ParserConfigurationException, IOException, SAXException {
 
@@ -31,10 +32,9 @@ public class ParseXML {
     public Map<String,Service> getServiceRule(){
 
         NodeList nList = document.getElementsByTagName("service");
-
+        logger.info("Xml parsing ");
         for (int temp = 0; temp < nList.getLength(); temp++) {
             Node nNode = nList.item(temp);
-            logger.info("Xml parsing ");
             if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                 Element eElement = (Element) nNode;
                 Service service = new Service();

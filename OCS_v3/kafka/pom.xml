@@ -5,10 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Kafka</artifactId>
+    <artifactId>kafka</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -97,7 +95,7 @@
                     <configuration>
                         <archive>
                             <manifest>
-                                <mainClass>org.example.ProducerDeneme</mainClass>
+                                <mainClass>com.i2i.internship.eyeCell.exampleKafka.ProducerTest</mainClass>
                             </manifest>
                         </archive>
                     </configuration>

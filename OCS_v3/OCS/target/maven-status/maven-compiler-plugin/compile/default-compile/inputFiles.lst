@@ -1,6 +1,5 @@
 C:\Users\AbdullahUguz\OCS\OCS_v3\OCS\src\main\java\com\i2i\internship\eyecell\App.java
-C:\Users\AbdullahUguz\OCS\OCS_v3\OCS\src\main\java\com\i2i\internship\eyecell\publishKafka\Publish.java
-C:\Users\AbdullahUguz\OCS\OCS_v3\OCS\src\main\java\com\i2i\internship\eyecell\publishKafka\Subscriber.java
+C:\Users\AbdullahUguz\OCS\OCS_v3\OCS\src\main\java\com\i2i\internship\eyecell\config\OCSConfig.java
 C:\Users\AbdullahUguz\OCS\OCS_v3\OCS\src\main\java\com\i2i\internship\eyecell\model\Service.java
 C:\Users\AbdullahUguz\OCS\OCS_v3\OCS\src\main\java\com\i2i\internship\eyecell\voltDbProcess\VoltDbOperation.java
 C:\Users\AbdullahUguz\OCS\OCS_v3\OCS\src\main\java\com\i2i\internship\eyecell\listenAkka\Listener.java
