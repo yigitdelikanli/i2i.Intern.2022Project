@@ -6,13 +6,15 @@ import akka.event.LoggingAdapter;
 import com.i2i.internship.eyeCell.kafka.method.ProducerMethod;
 import com.i2i.internship.eyeCell.kafka.modul.UsageMessage;
 import com.i2i.internship.eyecell.Message;
+import com.i2i.internship.eyecell.business.BusinessOperation;
 import com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation;
 
 import java.util.concurrent.ExecutionException;
 
 
 public class Listener extends UntypedActor {
-    private VoltDbOperation operation = new VoltDbOperation();
+    //private VoltDbOperation operation = new VoltDbOperation();
+    private BusinessOperation businessOperation =new BusinessOperation();
 
     private LoggingAdapter log = Logging.getLogger(getContext().system(), this);
 
@@ -25,13 +27,22 @@ public class Listener extends UntypedActor {
             log.info("Location {}", ((Message.Usage) message).getLocation());
             log.info("Service {}", ((Message.Usage) message).getService());
             log.info("Amount {}", ((Message.Usage) message).getAmount());
+            log.info("OpNumber {}", ((Message.Usage) message).getOpNumber());
 
-            //     voltDBSender(((Message.Usage) message).getMsisdn(),((Message.Usage) message).getService(),((Message.Usage) message).getAmount());
+            businessOperation.start(
+                    ((Message.Usage) message).getMsisdn(),
+                    ((Message.Usage) message).getLocation(),
+                    ((Message.Usage) message).getService(),
+                    ((Message.Usage) message).getAmount(),
+                    ((Message.Usage) message).getOpNumber()
+                    );
+
+            // voltDBSender(((Message.Usage) message).getMsisdn(),((Message.Usage) message).getService(),((Message.Usage) message).getAmount());
            // kafkaSender(((Message.Usage) message).getMsisdn(),((Message.Usage) message).getService(),((Message.Usage) message).getAmount());
         }
 
     }
-
+/*
 
     public void voltDBSender(String MSISDN, String service ,int amount){
 
@@ -65,5 +76,5 @@ public class Listener extends UntypedActor {
 
     }
 
-
+*/
 }

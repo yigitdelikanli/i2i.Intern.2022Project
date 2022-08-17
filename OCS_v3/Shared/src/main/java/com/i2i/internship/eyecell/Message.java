@@ -23,12 +23,14 @@ public class Message {
 
     public static class Usage implements Serializable{
         private String msisdn;
+        private String opNumber;
         private String location;
         private String service;
         private int amount;
 
-        public Usage (String msisdn, String location, String service, int amount){
+        public Usage (String msisdn, String opNumber, String location, String service, int amount){
             this.msisdn = msisdn;
+            this.opNumber = opNumber;
             this.location = location;
             this.service = service;
             this.amount = amount;
@@ -37,6 +39,8 @@ public class Message {
         public String getMsisdn() {
             return msisdn;
         }
+
+        public String getOpNumber() {return opNumber;}
 
         public String getLocation() {
             return location;

@@ -15,15 +15,18 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class ParseXML {
 
     private Logger logger = LogManager.getLogger(ParseXML.class);
     private Map<String, Service> serviceMap = new HashMap<>();
+    private List<Service> serviceList = new ArrayList<>();
     private DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-    private Document document = builder.parse(new File(OCSConfig.getChargingFilePath())); //"charging.xml"
+    private Document document = builder.parse(new File("charging.xml")); // OCSConfig.getChargingFilePath()
 
     public ParseXML() throws ParserConfigurationException, IOException, SAXException {
 
@@ -39,10 +42,10 @@ public class ParseXML {
                 Element eElement = (Element) nNode;
                 Service service = new Service();
 
-                service.setRegex(Integer.parseInt(eElement
+                service.setRegex(eElement
                         .getElementsByTagName("regex")
                         .item(0)
-                        .getTextContent()));
+                        .getTextContent());
                 service.setRound(Integer.parseInt(eElement
                         .getElementsByTagName("round")
                         .item(0)
@@ -56,5 +59,34 @@ public class ParseXML {
             }
         }
         return serviceMap;
+    }
+
+    public List<Service> getServiceInfo(){
+        NodeList nList = document.getElementsByTagName("service");
+        logger.info("Xml parsing ");
+        for (int temp = 0; temp < nList.getLength(); temp++) {
+            Node nNode = nList.item(temp);
+            if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+                Element eElement = (Element) nNode;
+                Service service = new Service();
+
+                service.setPackageName(eElement.getAttribute("serviceName"));
+                service.setRegex(eElement
+                        .getElementsByTagName("regex")
+                        .item(0)
+                        .getTextContent());
+                service.setRound(Integer.parseInt(eElement
+                        .getElementsByTagName("round")
+                        .item(0)
+                        .getTextContent()));
+                service.setPrice(Double.parseDouble(eElement
+                        .getElementsByTagName("price")
+                        .item(0)
+                        .getTextContent()));
+
+                serviceList.add(service);
+            }
+        }
+        return serviceList;
     }
 }

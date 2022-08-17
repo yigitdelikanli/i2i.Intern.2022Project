@@ -71,14 +71,14 @@ public class VoltDbOperation {
         return table3.getLong(0);
     }
 
-    public void sendVoiceAmount(String MSISDN, int usedAmount){
+    public void sendVoiceAmount(String MSISDN, int usedAmount,int price){
 
         try {
             int uid= (int) getUidByMSISDN(MSISDN);
             String packageName = getPackageName(MSISDN);
 
             client = getConnectionVoltDB();
-            client.callProcedure("updateBalanceVoice",usedAmount,uid,packageName);
+            client.callProcedure("updateBalanceVoice",usedAmount,uid,packageName); // price eklenecek
             logger.info("Send amount of voice used to VoltDB");
 
         } catch (IOException e) {
@@ -91,14 +91,14 @@ public class VoltDbOperation {
 
     }
 
-    public void sendSmsAmount(String MSISDN, int usedAmount){
+    public void sendSmsAmount(String MSISDN, int usedAmount,int price){
 
         try {
             int uid= (int) getUidByMSISDN(MSISDN);
             String packageName = getPackageName(MSISDN);
 
             client = getConnectionVoltDB();
-            client.callProcedure("updateBalanceSMS",usedAmount,uid,packageName);
+            client.callProcedure("updateBalanceSMS",usedAmount,uid,packageName); // price eklenecek
             logger.info("Send amount of sms used to VoltDB");
 
         } catch (IOException e) {
@@ -111,14 +111,33 @@ public class VoltDbOperation {
 
     }
 
-    public void sendGbAmount(String MSISDN, int usedAmount){
+    public void sendGbAmount(String MSISDN, int usedAmount,int price){
 
         try {
             int uid= (int) getUidByMSISDN(MSISDN);
             String packageName = getPackageName(MSISDN);
 
             client = getConnectionVoltDB();
-            client.callProcedure("updateBalanceData",usedAmount,uid,packageName);
+            client.callProcedure("updateBalanceData",usedAmount,uid,packageName); // price eklenecek
+            logger.info("Send amount of gb used to VoltDB");
+
+        } catch (IOException e) {
+            logger.error(e.getMessage());
+            e.printStackTrace();
+        } catch (ProcCallException e) {
+            logger.error(e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    public void sendPrice(String MSISDN, int price){
+
+        try {
+            int uid= (int) getUidByMSISDN(MSISDN);
+         //   String packageName = getPackageName(MSISDN);
+
+            client = getConnectionVoltDB();
+            client.callProcedure("updatePrice",uid,price);
             logger.info("Send amount of gb used to VoltDB");
 
         } catch (IOException e) {

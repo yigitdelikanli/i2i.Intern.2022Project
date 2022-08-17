@@ -1,15 +1,24 @@
 package com.i2i.internship.eyecell.model;
 
 public class Service {
-    private int regex;
+    private String packageName;
+    private String regex;
     private int round;
     private double price;
 
-    public int getRegex() {
+    public String getPackageName() {
+        return packageName;
+    }
+
+    public void setPackageName(String packageName) {
+        this.packageName = packageName;
+    }
+
+    public String getRegex() {
         return regex;
     }
 
-    public void setRegex(int regex) {
+    public void setRegex(String regex) {
         this.regex = regex;
     }
 

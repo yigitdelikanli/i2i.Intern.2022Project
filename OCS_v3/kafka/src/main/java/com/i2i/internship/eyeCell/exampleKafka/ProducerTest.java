@@ -10,6 +10,8 @@ public class ProducerTest {
         msg.setUsedService("Voice");
         msg.setUsedAmount(5);
         msg.setMsisdn("5350857286");
+        msg.setPrice(2);
+        msg.setSubscriberID(1);
         try {
             ProducerMethod.runProducer(msg);
         } catch (ExecutionException e) {

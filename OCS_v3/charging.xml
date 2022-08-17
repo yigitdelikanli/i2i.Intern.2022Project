@@ -3,17 +3,17 @@
     <zones>
         <zone>
             <service serviceName="voice">
-                <regex>90</regex>
+                <regex>^505</regex>
                 <round>60</round>
                 <price>0.90</price>
             </service>
             <service serviceName="sms" >
-                <regex>70</regex>
+                <regex>^505</regex>
                 <round>30</round>
                 <price>1</price>
             </service>
             <service serviceName="gb">
-                <regex>80</regex>
+                <regex>^505</regex>
                 <round>2</round>
                 <price>3</price>
             </service>

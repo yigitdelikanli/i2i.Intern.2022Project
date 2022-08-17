@@ -7,3 +7,17 @@
 16:29:31.297 [main] INFO  com.i2i.internship.eyeCell.kafka.method.ProducerMethod - Message Send
 16:29:31.300 [main] INFO  com.i2i.internship.eyecell.App - Work
 17:12:37.379 [main] INFO  com.i2i.internship.eyecell.App - Work
+19:07:46.017 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - VoltDB connection granted
+19:07:46.343 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - Getting uid by MSISDN
+19:07:46.524 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - VoltDB connection granted
+19:07:46.583 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - Getting package name
+19:07:46.863 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - VoltDB connection granted
+19:07:46.989 [main] ERROR com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - VOLTDB ERROR: PROCEDURE updatePrice EXPECTS 1 PARAMS, BUT RECEIVED 2
+22:41:49.690 [main] INFO  com.i2i.internship.eyecell.parseXml.ParseXML - Xml parsing 
+22:44:30.613 [main] INFO  com.i2i.internship.eyecell.parseXml.ParseXML - Xml parsing 
+22:45:44.265 [main] INFO  com.i2i.internship.eyecell.parseXml.ParseXML - Xml parsing 
+22:46:54.983 [main] INFO  com.i2i.internship.eyecell.parseXml.ParseXML - Xml parsing 
+22:47:32.799 [main] INFO  com.i2i.internship.eyecell.parseXml.ParseXML - Xml parsing 
+22:48:04.695 [main] INFO  com.i2i.internship.eyecell.parseXml.ParseXML - Xml parsing 
+22:54:02.978 [main] INFO  com.i2i.internship.eyecell.parseXml.ParseXML - Xml parsing 
+22:54:33.739 [main] INFO  com.i2i.internship.eyecell.parseXml.ParseXML - Xml parsing 

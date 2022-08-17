@@ -20,8 +20,8 @@ public class ProducerMethod {
         logger.info("Producer created.");
         ProducerRecord<Long,Serializable> record = new ProducerRecord<>(kafkaConstants.topicName,msg);
         try{
-        producer.send(record).get();
-        logger.info("Message Send");
+            producer.send(record).get();
+            logger.info("Message Send");
         }
         catch (ExecutionException e){
             logger.info("Error during producer send : ");
