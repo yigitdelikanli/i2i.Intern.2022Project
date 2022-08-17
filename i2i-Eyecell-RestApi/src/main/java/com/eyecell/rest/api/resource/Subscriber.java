@@ -12,6 +12,8 @@ public class Subscriber {
     private final Date sDate;
     private final String status;
 
+
+
     public Subscriber(long subscriberId, String MSISDN, String name, String surname, String email, String password, Date sDate, String status) {
         this.subscriberId = subscriberId;
         this.msisdn = MSISDN;

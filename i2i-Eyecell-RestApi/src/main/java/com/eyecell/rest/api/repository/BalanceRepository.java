@@ -43,20 +43,33 @@ public class BalanceRepository {
         VoltDbHelper voltDbHelper = new VoltDbHelper();
         Client client = voltDbHelper.client();
         ClientResponse response;
-        response = client.callProcedure("ShowPackageAmountVoice", MSISDN);
+
+        response = client.callProcedure("getMSISDNWithId",MSISDN);
+        VoltTable table3 = response.getResults()[0];
+        table3.advanceRow();
+        long SUBSC_ID =table3.getLong(0);
+
+        response = client.callProcedure("ShowPackageAmountVoice", SUBSC_ID);
         VoltTable tableVoiceAmount = response.getResults()[0];
         long voice = tableVoiceAmount.fetchRow(0).getLong(0);
         balanceForUser.setVoice(voice);
 
-        response = client.callProcedure("ShowPackageAmountData", MSISDN);
+        response = client.callProcedure("ShowPackageAmountData", SUBSC_ID);
         VoltTable tableDataAmount = response.getResults()[0];
         long data = tableDataAmount.fetchRow(0).getLong(0);
         balanceForUser.setData(data);
 
-        response = client.callProcedure("ShowPackageAmountSMS", MSISDN);
+        response = client.callProcedure("ShowPackageAmountSMS", SUBSC_ID);
         VoltTable tableSmsAmount = response.getResults()[0];
         long SMS = tableSmsAmount.fetchRow(0).getLong(0);
         balanceForUser.setSms(SMS);
+
+        response = client.callProcedure("ShowPrice", SUBSC_ID);
+        VoltTable tablePriceAmount = response.getResults()[0];
+        long price = tableSmsAmount.fetchRow(0).getLong(0);
+        balanceForUser.setPrice(price);
+
+
         return balanceForUser;
     }
 

@@ -5,7 +5,7 @@ import com.eyecell.rest.api.dbhelper.VoltDbHelper;
 import com.eyecell.rest.api.encryption.Encryption;
 import com.eyecell.rest.api.resource.NewSubscriber;
 import com.eyecell.rest.api.resource.Subscriber;
-import org.com.i2i.intern.EyeCell.HazelcastConfiguration;
+import org.com.i2i.internship.EyeCell.Hazelcast.HazelcastConfiguration;
 import org.voltdb.client.*;
 import java.io.IOException;
 import java.sql.*;
@@ -13,10 +13,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SubscriberRepository {
-
+    HazelcastConfiguration hazelcastConfiguration;
     OracleDbHelper oracleDbHelper = new OracleDbHelper();
     Encryption encryption = new Encryption();
-
+    private Long tempUI ;
     public List<Subscriber> getSubscribers() throws SQLException {
         Connection connection = oracleDbHelper.getConnection();
         Statement statement = connection.createStatement();
@@ -41,39 +41,54 @@ public class SubscriberRepository {
     public void addSubscriberOracleDb(NewSubscriber newSubscriber) throws SQLException {
         OracleDbHelper oracleDbHelper = new OracleDbHelper();
         Connection connection = oracleDbHelper.getConnection();
-        String sql = "{call package_subscriber.create_subscriber(?,?,?,?,?,?)}";
+        String sql = "{call package_subscriber.create_subscriber(?,?,?,?,?,?,?)}";
         CallableStatement callableStatement = connection.prepareCall(sql);
         String encryptedPassword = encryption.encrypt(newSubscriber.getPassword());
 
-        callableStatement.setString(1, newSubscriber.getMSISDN());
-        callableStatement.setString(2, newSubscriber.getName());
-        callableStatement.setString(3, newSubscriber.getSurname());
-        callableStatement.setString(4, newSubscriber.getEmail());
-        callableStatement.setString(5, encryptedPassword);
-        callableStatement.setInt(6, newSubscriber.getPackageId());
+        callableStatement.setLong(1,tempUI);
+        callableStatement.setString(2, newSubscriber.getMSISDN());
+        callableStatement.setString(3, newSubscriber.getName());
+        callableStatement.setString(4, newSubscriber.getSurname());
+        callableStatement.setString(5, newSubscriber.getEmail());
+        callableStatement.setString(6, encryptedPassword);
+        callableStatement.setInt(7, newSubscriber.getPackageId());
 
         callableStatement.execute();
         connection.close();
     }
 
+    public SubscriberRepository() {
+        hazelcastConfiguration = new HazelcastConfiguration();
+        hazelcastConfiguration.initConnection("34.77.94.205", "34.77.94.205:5702", "Customers Map (Current Map)");
+    }
+
     public void addSubscriberVoltDb(NewSubscriber newSubscriber) throws SQLException, IOException, ProcCallException {
-        HazelcastConfiguration hazelcastConfiguration = new HazelcastConfiguration();
-        hazelcastConfiguration.initConnection("34.77.94.205", "34.77.94.205:5702");
-
-        long subscriberId = hazelcastConfiguration.getMapSize() + 1;
-
         VoltDbHelper voltDbHelper = new VoltDbHelper();
         Client client = voltDbHelper.client();
         String encryptedPassword = encryption.encrypt(newSubscriber.getPassword());
         client.callProcedure(
                 "UserInsert",
-                subscriberId,
+                (getUI()),
                 newSubscriber.getMSISDN(),
                 newSubscriber.getName(),
                 newSubscriber.getSurname(),
                 newSubscriber.getEmail(),
                 encryptedPassword,
                 newSubscriber.getPackageId());
+        hazelcastConfiguration.putMsisdn(newSubscriber.getMSISDN(), tempUI);
+    }
 
+    public Long getUI() throws SQLException {
+        OracleDbHelper dbHelper = new OracleDbHelper();
+        Connection connection = dbHelper.getConnection();
+        String sql = "{ ? = call package_subscriber.get_subscriber_Id}";
+
+        CallableStatement callableStatement = connection.prepareCall(sql);
+        callableStatement.registerOutParameter(1, Types.INTEGER);
+        callableStatement.execute();
+        Long UI = callableStatement.getLong(1);
+
+        tempUI = UI;
+        return UI;
     }
 }

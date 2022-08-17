@@ -22,21 +22,21 @@ import java.util.List;
 public class BalanceController {
     BalanceRepository balanceRepository = new BalanceRepository();
 
-    @GetMapping(value = "AllUsers", produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "get all Subcriber's balances")
+    @GetMapping(value = "AllUsers", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<TotalBalanceForAllUsers> getBalances() throws SQLException {
         return balanceRepository.getBalances();
     }
 
-    @GetMapping(value = "sBalance", produces = MediaType.APPLICATION_JSON_VALUE)
-    @ApiOperation(value = "Get balances by MSISDN")
+    @ApiOperation(value = "Get remaining balance by MSISDN")
+    @GetMapping(value = "balanceByMSISDN", produces = MediaType.APPLICATION_JSON_VALUE)
     public RemainingBalanceForUser getBalanceForUser(String MSISDN) throws IOException, ProcCallException {
         BalanceRepository balanceForUserRepository = new BalanceRepository();
         return balanceForUserRepository.getBalanceByMSISDN(MSISDN);
     }
 
-    @ApiOperation(value = "totalBalance")
-    @GetMapping(value = "/TotalBalance", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "Get total balance by MSISDN")
+    @GetMapping(value = "totalBalanceByMSISDN", produces = MediaType.APPLICATION_JSON_VALUE)
     public TotalBalanceForUser totalBalanceForUser(String MSISDN) throws IOException, ProcCallException {
         BalanceRepository totalBalanceForUserRepository = new BalanceRepository();
         return totalBalanceForUserRepository.totalBalanceForUser(MSISDN);

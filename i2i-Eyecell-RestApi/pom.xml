@@ -19,8 +19,8 @@
 
     <repositories>
         <repository>
-            <id>my</id>
-            <url>file://C:\Users\efekan\Desktop\hazelcast-pom</url>
+            <id>maven-repository</id>
+            <url>file://C:\Users\efekan\Desktop\hazelcast-newrepo</url>
         </repository>
     </repositories>
 
@@ -32,18 +32,25 @@
             <version>2.9.2</version>
         </dependency>
 
-
-
         <dependency>
             <groupId>com.oracle.database.jdbc</groupId>
             <artifactId>ojdbc8</artifactId>
             <version>21.3.0.0</version>
         </dependency>
+
         <dependency>
             <groupId>org.voltdb</groupId>
             <artifactId>voltdbclient</artifactId>
             <version>6.6</version>
         </dependency>
+
+
+        <dependency>
+            <groupId>org.com.i2i.internship.EyeCell.Hazelcast</groupId>
+            <artifactId>HazelcastLibrary</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
 
 
         <!-- https://mvnrepository.com/artifact/org.voltdb/voltdb -->
@@ -68,12 +75,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.com.i2i.intern.EyeCell</groupId>
-            <artifactId>HazelcastLibrary</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

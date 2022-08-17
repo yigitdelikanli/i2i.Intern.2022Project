@@ -5,10 +5,14 @@ public class RemainingBalanceForUser {
     private long sms;
     private long voice;
 
-    public RemainingBalanceForUser(long data, long sms, long voice) {
+    private long price;
+
+
+    public RemainingBalanceForUser(long data, long sms, long voice, long price) {
         this.data = data;
         this.sms = sms;
         this.voice = voice;
+        this.price = price;
     }
 
     public RemainingBalanceForUser() {
@@ -36,5 +40,13 @@ public class RemainingBalanceForUser {
 
     public void setVoice(long voice) {
         this.voice = voice;
+    }
+
+    public long getPrice() {
+        return price;
+    }
+
+    public void setPrice(long price) {
+        this.price = price;
     }
 }
