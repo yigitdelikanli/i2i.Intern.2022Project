@@ -15,7 +15,7 @@ public class UsageMessageProducer {
         properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, kafkaConstants.bootstrapServers);
         properties.setProperty(ProducerConfig.CLIENT_ID_CONFIG, kafkaConstants.clientID);
         properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,LongSerializer.class.getName());
-        properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,"com.modul.usageMessageSerializer");
+        properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,"com.i2i.internship.eyeCell.kafka.modul.UsageMessageSerializer");
         properties.setProperty(ProducerConfig.MAX_BLOCK_MS_CONFIG, "30000");
         properties.setProperty(ProducerConfig.ACKS_CONFIG, "all");
 

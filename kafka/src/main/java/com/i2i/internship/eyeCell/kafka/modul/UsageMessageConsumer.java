@@ -17,7 +17,7 @@ public class UsageMessageConsumer {
         properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG, "consumerGroup");
         properties.setProperty(ConsumerConfig.CLIENT_ID_CONFIG, kafkaConstants.clientID);
         properties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, LongDeserializer.class.getName());
-        properties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
+        properties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, "com.i2i.internship.eyeCell.kafka.modul.UsageMessageDeserializer");
         properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, kafkaConstants.autoOffsetReset);
 
         Consumer<Long, UsageMessage> consumer = new KafkaConsumer<>(properties);

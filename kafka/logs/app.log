@@ -13,3 +13,16 @@
 2022-08-16 15:21:53,188 INFO c.m.ConsumerMethod [main] No message to read
 2022-08-16 15:21:54,191 INFO c.m.ConsumerMethod [main] No message to read
 2022-08-16 15:21:55,201 INFO c.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:37,575 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:38,582 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:39,597 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:40,602 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:41,603 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:41,661 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-17 17:23:41,725 INFO c.i.i.e.k.m.ConsumerMethod [main] Message received
+2022-08-17 17:23:41,725 INFO c.i.i.e.k.m.ConsumerMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 24, CreateTime = 1660742970983, serialized key size = -1, serialized value size = 62, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:1234569877, Used Amount: 555, Used Service: voice)
+2022-08-17 17:23:42,742 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:43,756 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:44,771 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:45,786 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:46,793 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read

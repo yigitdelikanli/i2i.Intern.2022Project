@@ -27,7 +27,13 @@ public class ConsumerMethod {
                 logger.info(
                         record.toString()
                 );
-                String msg = record.toString();
+                UsageMessage msg = record.value();
+                String msisdn =msg.getMsisdn();
+                Long usedAmount= msg.getUsedAmount();
+                String usedService= msg.getUsedService();
+                System.out.println(msisdn);
+                System.out.println(usedAmount);
+                System.out.println(usedService);
             }
 
             consumer.commitAsync();
