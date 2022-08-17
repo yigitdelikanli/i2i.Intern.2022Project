@@ -99,7 +99,7 @@
                     <configuration>
                         <archive>
                             <manifest>
-                                <mainClass>org.example.ProducerDeneme</mainClass>
+                                <mainClass>com.i2i.internship.eyeCell.exampleKafka.ProducerTest</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
