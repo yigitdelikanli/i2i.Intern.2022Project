@@ -11,7 +11,7 @@ public class UsageMessage implements Serializable {
 
     @Override
     public String toString() {
-        return "MSISDN:" + getMsisdn() +  ", Used Amount: " + getUsedAmount() +", Used Service: "+ getUsedService();
+        return "MSISDN:" + getMsisdn() +  ", Used Amount: " + getUsedAmount() +", Used Service: "+ getUsedService() +", Price: " + getPrice() + ", UID: "+ getSubscriberID();
     }
 
     public String getMsisdn() {

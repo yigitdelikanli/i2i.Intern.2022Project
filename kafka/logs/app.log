@@ -26,3 +26,27 @@
 2022-08-17 17:23:44,771 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
 2022-08-17 17:23:45,786 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
 2022-08-17 17:23:46,793 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:46:44,007 INFO c.i.i.e.k.m.ProducerMethod [main] Producer created.
+2022-08-17 18:46:45,038 INFO c.i.i.e.k.m.UsageMessageSerializer [main] Serializing...
+2022-08-17 18:46:45,427 INFO c.i.i.e.k.m.ProducerMethod [main] Message Send
+2022-08-17 18:47:01,491 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:02,505 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:03,516 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:04,525 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:05,534 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:06,544 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:07,550 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:08,553 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:09,566 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:10,571 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:11,582 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:12,586 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:13,590 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:13,946 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-17 18:47:14,172 INFO c.i.i.e.k.m.ConsumerMethod [main] Message received
+2022-08-17 18:47:14,172 INFO c.i.i.e.k.m.ConsumerMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 26, CreateTime = 1660751205037, serialized key size = -1, serialized value size = 87, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5350857286, Used Amount: 5, Used Service: Voice)
+2022-08-17 18:47:15,181 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:16,194 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:17,211 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:18,224 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:19,230 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
