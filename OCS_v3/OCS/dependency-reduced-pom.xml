@@ -19,7 +19,7 @@
         <configuration>
           <transformers>
             <transformer>
-              <mainClass>com.i2i.App</mainClass>
+              <mainClass>com.i2i.internship.eyecell.App</mainClass>
             </transformer>
             <transformer>
               <resource>reference.conf</resource>
