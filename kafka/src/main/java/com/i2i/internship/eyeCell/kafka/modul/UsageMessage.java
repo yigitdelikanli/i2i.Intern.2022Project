@@ -6,6 +6,8 @@ public class UsageMessage implements Serializable {
     private String msisdn;
     private long usedAmount;
     private String usedService;
+    private int subscriberID;
+    private int price;
 
     @Override
     public String toString() {
@@ -35,5 +37,21 @@ public class UsageMessage implements Serializable {
 
     public void setUsedService(String usedService) {
         this.usedService = usedService;
+    }
+
+    public int getSubscriberID() {
+        return subscriberID;
+    }
+
+    public void setSubscriberID(int subscriberID) {
+        this.subscriberID = subscriberID;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 }

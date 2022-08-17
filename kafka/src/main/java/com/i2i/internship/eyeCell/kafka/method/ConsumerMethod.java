@@ -31,9 +31,14 @@ public class ConsumerMethod {
                 String msisdn =msg.getMsisdn();
                 Long usedAmount= msg.getUsedAmount();
                 String usedService= msg.getUsedService();
+                int price =msg.getPrice();
+                int subscriberID= msg.getSubscriberID();
+
                 System.out.println(msisdn);
                 System.out.println(usedAmount);
                 System.out.println(usedService);
+                System.out.println(price);
+                System.out.println(subscriberID);
             }
 
             consumer.commitAsync();
