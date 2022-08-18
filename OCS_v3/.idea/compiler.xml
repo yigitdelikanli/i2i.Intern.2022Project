@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="OCS_v3" />
         <module name="Shared" />
         <module name="OCS" />
         <module name="kafka" />
@@ -14,7 +13,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="kafka" target="8" />
-      <module name="OCS" target="8" />
+      <module name="OCS" target="11" />
       <module name="OCS_v3" target="11" />
       <module name="Shared" target="8" />
     </bytecodeTargetLevel>

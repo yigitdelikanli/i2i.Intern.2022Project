@@ -10,3 +10,15 @@
 09:51:43.391 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - Getting package name
 09:51:43.527 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - VoltDB connection granted
 09:51:43.814 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - Send amount of sms used to VoltDB
+13:44:24.568 [main] INFO  com.i2i.internship.eyecell.App - selam
+13:44:27.380 [AkkaRemoteServer-akka.actor.default-dispatcher-3] INFO  com.i2i.internship.eyecell.parseXml.ParseXML - Xml parsing 
+14:12:21.912 [main] INFO  com.i2i.internship.eyecell.App - selam
+14:12:22.809 [AkkaRemoteServer-akka.actor.default-dispatcher-3] INFO  com.i2i.internship.eyecell.parseXml.ParseXML - Xml parsing 
+14:12:46.137 [main] INFO  com.i2i.internship.eyecell.App - selam
+14:18:01.341 [main] INFO  com.i2i.internship.eyecell.App - selam
+14:20:01.755 [main] INFO  com.i2i.internship.eyecell.App - selam
+14:20:25.954 [main] INFO  com.i2i.internship.eyecell.App - selam
+14:22:02.307 [main] INFO  com.i2i.internship.eyecell.App - selam
+14:37:26.474 [main] INFO  com.i2i.internship.eyecell.App - selam
+16:04:05.758 [main] INFO  com.i2i.internship.eyecell.App - selam
+16:04:06.718 [AkkaRemoteServer-akka.actor.default-dispatcher-4] INFO  com.i2i.internship.eyecell.parseXml.ParseXML - Xml parsing 

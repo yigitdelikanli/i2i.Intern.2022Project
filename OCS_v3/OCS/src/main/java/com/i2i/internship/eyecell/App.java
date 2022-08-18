@@ -20,6 +20,8 @@ public class App {
 
     public static void main(String[] args) {
 
+
+        log.info("selam");
 /*
         Pattern p = Pattern.compile("^505[0-9]{7}$");
         Matcher m = p.matcher("5051234545");
@@ -47,9 +49,9 @@ public class App {
 
 
 
+  //         fileControl(args);
 
 
-        //   fileControl(args);
 
 
 

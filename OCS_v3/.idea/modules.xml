@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OCS/OCS.iml" filepath="$PROJECT_DIR$/OCS/OCS.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/OCS_v3.iml" filepath="$PROJECT_DIR$/.idea/OCS_v3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Shared/Shared.iml" filepath="$PROJECT_DIR$/Shared/Shared.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka/kafka.iml" filepath="$PROJECT_DIR$/kafka/kafka.iml" />
     </modules>
