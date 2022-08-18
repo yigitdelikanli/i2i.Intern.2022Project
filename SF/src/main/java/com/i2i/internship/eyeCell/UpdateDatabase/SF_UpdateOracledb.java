@@ -10,6 +10,8 @@ public class SF_UpdateOracledb {
             SF_UpdateOracledbMethod.runConsumer();
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 }
