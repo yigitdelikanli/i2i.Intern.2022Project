@@ -11,10 +11,11 @@ public class Subscriber {
     private final String password;
     private final Date sDate;
     private final String status;
+    private final String securityQuesstion;
 
 
 
-    public Subscriber(long subscriberId, String MSISDN, String name, String surname, String email, String password, Date sDate, String status) {
+    public Subscriber(long subscriberId, String MSISDN, String name, String surname, String email, String password, Date sDate, String status, String securityQuesstion) {
         this.subscriberId = subscriberId;
         this.msisdn = MSISDN;
         this.name = name;
@@ -23,8 +24,12 @@ public class Subscriber {
         this.password = password;
         this.sDate = sDate;
         this.status = status;
+        this.securityQuesstion = securityQuesstion;
     }
 
+    public String getSecurityQuesstion() {
+        return securityQuesstion;
+    }
     public String getPassword() {
         return password;
     }

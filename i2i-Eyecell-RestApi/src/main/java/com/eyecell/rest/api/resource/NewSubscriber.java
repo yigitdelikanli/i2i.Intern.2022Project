@@ -8,13 +8,24 @@ public class NewSubscriber {
     private String password;
     private String email;
 
-    public NewSubscriber(String MSISDN, int packageId, String name, String surname, String password, String email) {
+    private String securityQuestion;
+
+    public String getSecurityQuestion() {
+        return securityQuestion;
+    }
+
+    public void setSecurityQuestion(String securityQuestion) {
+        this.securityQuestion = securityQuestion;
+    }
+
+    public NewSubscriber(String MSISDN, int packageId, String name, String surname, String password, String email, String securityQuestion) {
         this.MSISDN = MSISDN;
         this.packageId = packageId;
         this.name = name;
         this.surname = surname;
         this.password = password;
         this.email = email;
+        this.securityQuestion = securityQuestion;
     }
 
     public String getMSISDN() {

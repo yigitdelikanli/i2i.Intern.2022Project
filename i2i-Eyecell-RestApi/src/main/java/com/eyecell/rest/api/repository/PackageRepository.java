@@ -1,9 +1,15 @@
 package com.eyecell.rest.api.repository;
 
 import com.eyecell.rest.api.dbhelper.OracleDbHelper;
+import com.eyecell.rest.api.dbhelper.VoltDbHelper;
 import com.eyecell.rest.api.resource.Package;
 import com.eyecell.rest.api.resource.PackageList;
+import org.voltdb.VoltTable;
+import org.voltdb.client.Client;
+import org.voltdb.client.ClientResponse;
+import org.voltdb.client.ProcCallException;
 
+import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +46,49 @@ public class PackageRepository {
         }
         connection.close();
         return packageLists;
+
+    }
+
+    public List<Package> getPackageByMSISDNinList(String MSISDN) throws IOException, ProcCallException {
+        VoltDbHelper voltDbHelper = new VoltDbHelper();
+        Client client = voltDbHelper.client();
+        ClientResponse response;
+
+        List<Package> packageInfo = new ArrayList<>();
+
+        response = client.callProcedure("getPackage",MSISDN);
+        VoltTable tablePackageInfo = response.getResults()[0];
+        tablePackageInfo.advanceRow();
+        long packageID =tablePackageInfo.getLong(0);
+        String packageName =tablePackageInfo.getString(1);
+        long amountVoice =tablePackageInfo.getLong(2);
+        long amountData =tablePackageInfo.getLong(3);
+        long amountSMS =tablePackageInfo.getLong(4);
+        long duration =tablePackageInfo.getLong(5);
+
+        packageInfo.add(new Package(packageID,packageName,amountVoice,amountData,amountSMS,duration));
+        return packageInfo;
+
+    }
+
+    public Package getPackageByMSISDNinObject(String MSISDN) throws IOException, ProcCallException {
+        VoltDbHelper voltDbHelper = new VoltDbHelper();
+        Client client = voltDbHelper.client();
+        ClientResponse response;
+
+
+        response = client.callProcedure("getPackage",MSISDN);
+        VoltTable tablePackageInfo = response.getResults()[0];
+        tablePackageInfo.advanceRow();
+        long packageID =tablePackageInfo.getLong(0);
+        String packageName =tablePackageInfo.getString(1);
+        long amountVoice =tablePackageInfo.getLong(2);
+        long amountData =tablePackageInfo.getLong(3);
+        long amountSMS =tablePackageInfo.getLong(4);
+        long duration =tablePackageInfo.getLong(5);
+
+
+        return (new Package(packageID,packageName,amountVoice,amountData,amountSMS,duration));
 
     }
 

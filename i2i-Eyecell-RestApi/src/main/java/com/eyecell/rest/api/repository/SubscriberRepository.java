@@ -31,7 +31,8 @@ public class SubscriberRepository {
                     resultSet.getString("EMAIL"),
                     resultSet.getString("PASSWORD"),
                     resultSet.getDate("SDATE"),
-                    resultSet.getString("STATUS")));
+                    resultSet.getString("STATUS"),
+                    resultSet.getString("SECURITY_QUESTION")));
         }
         connection.close();
         return subscriberList;
@@ -41,7 +42,7 @@ public class SubscriberRepository {
     public void addSubscriberOracleDb(NewSubscriber newSubscriber) throws SQLException {
         OracleDbHelper oracleDbHelper = new OracleDbHelper();
         Connection connection = oracleDbHelper.getConnection();
-        String sql = "{call package_subscriber.create_subscriber(?,?,?,?,?,?,?)}";
+        String sql = "{call package_subscriber.create_subscriber(?,?,?,?,?,?,?,?)}";
         CallableStatement callableStatement = connection.prepareCall(sql);
         String encryptedPassword = encryption.encrypt(newSubscriber.getPassword());
 
@@ -51,7 +52,8 @@ public class SubscriberRepository {
         callableStatement.setString(4, newSubscriber.getSurname());
         callableStatement.setString(5, newSubscriber.getEmail());
         callableStatement.setString(6, encryptedPassword);
-        callableStatement.setInt(7, newSubscriber.getPackageId());
+        callableStatement.setString(7,newSubscriber.getSecurityQuestion());
+        callableStatement.setInt(8, newSubscriber.getPackageId());
 
         callableStatement.execute();
         connection.close();
@@ -59,7 +61,7 @@ public class SubscriberRepository {
 
     public SubscriberRepository() {
         hazelcastConfiguration = new HazelcastConfiguration();
-        hazelcastConfiguration.initConnection("34.77.94.205", "34.77.94.205:5702", "Customers Map (Current Map)");
+        hazelcastConfiguration.initConnection("34.77.94.205", "34.77.94.205", "Customers Map (Current Map)");
     }
 
     public void addSubscriberVoltDb(NewSubscriber newSubscriber) throws SQLException, IOException, ProcCallException {
@@ -74,6 +76,7 @@ public class SubscriberRepository {
                 newSubscriber.getSurname(),
                 newSubscriber.getEmail(),
                 encryptedPassword,
+                newSubscriber.getSecurityQuestion(),
                 newSubscriber.getPackageId());
         hazelcastConfiguration.putMsisdn(newSubscriber.getMSISDN(), tempUI);
     }
@@ -89,6 +92,7 @@ public class SubscriberRepository {
         Long UI = callableStatement.getLong(1);
 
         tempUI = UI;
+        connection.close();
         return UI;
     }
 }

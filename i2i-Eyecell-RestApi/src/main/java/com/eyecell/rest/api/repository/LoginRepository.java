@@ -20,7 +20,7 @@ public class LoginRepository {
         Connection connection = oracleDbHelper.getConnection();
         String encryptedPassword = encryption.encrypt(password);
 
-        CallableStatement callableStatement = connection.prepareCall("{? = call package_subscriber.login(?,?)}");
+        CallableStatement callableStatement = connection.prepareCall("{ ? = call package_subscriber.login(?,?)}");
         callableStatement.registerOutParameter(1, Types.INTEGER);
         callableStatement.setString(2, MSISDN);
         callableStatement.setString(3, encryptedPassword);
@@ -31,7 +31,7 @@ public class LoginRepository {
             return new ResponseEntity<>(logins, HttpStatus.OK);
 
         } else
-            return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("User not Found", HttpStatus.BAD_REQUEST);
     }
 
     public ResponseEntity loginCheckAndroid(@PathVariable String MSISDN, @PathVariable String password) throws SQLException {
