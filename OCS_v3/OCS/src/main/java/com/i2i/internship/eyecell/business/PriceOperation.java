@@ -15,6 +15,7 @@ import java.util.regex.Pattern;
 
 public class PriceOperation {
     private Service smsService=null;
+    private Service voice118Service=null;
     private Service gbService =null;
     private Service voiceService=null;
     private int price;
@@ -30,8 +31,9 @@ public class PriceOperation {
             ParseXML parseXML =new ParseXML();
             List<Service> serviceList = parseXML.getServiceInfo();
             voiceService =serviceList.get(0);
-            smsService =serviceList.get(1);
-            gbService =serviceList.get(2);
+            voice118Service =serviceList.get(1);
+            smsService =serviceList.get(2);
+            gbService =serviceList.get(3);
 
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
@@ -42,28 +44,32 @@ public class PriceOperation {
         }
     }
 
-    public int getUsedPrice(String MSISDN,int amount,String service){
+    public int getUsedPrice(String opNumber,int amount,String service){
         price =0;
 
-        if(service =="sms" && regexControl(MSISDN,smsService.getRegex())){
-            price = (int) ((amount/smsService.getRound())* smsService.getPrice());
+        if(service.toUpperCase() =="SMS" && regexControl(opNumber,smsService.getRegex())){
+            price = (int) (amount* smsService.getPrice());
 
         }
-        if(service =="data" && regexControl(MSISDN,gbService.getRegex())){
+        if(service.toUpperCase() =="DATA" && regexControl(opNumber,gbService.getRegex())){
             price = (int) ((amount/gbService.getRound())* gbService.getPrice());
 
         }
-        if(service =="voice" && regexControl(MSISDN,voiceService.getRegex())){
+        if(service.toUpperCase() =="VOICE" && regexControl(opNumber,voiceService.getRegex())){
             price = (int) ((amount/voiceService.getRound())* voiceService.getPrice());
+
+        }
+        if(service.toUpperCase() =="VOICE" && regexControl(opNumber,voice118Service.getRegex())){
+            price = (int) ((amount/voice118Service.getRound())* voice118Service.getPrice());
 
         }
         return price;
 
     }
 
-    private boolean regexControl(String MSISDN,String regex){
-        Pattern p = Pattern.compile("[^505][0-9]{5}$"); //REGEX
-        Matcher m = p.matcher("5051234545"); //MSISDN
+    private boolean regexControl(String opNumber,String regex){
+        Pattern p = Pattern.compile(regex); //REGEX
+        Matcher m = p.matcher(opNumber); //MSISDN
 
         return m.find();
     }

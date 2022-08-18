@@ -1,0 +1,12 @@
+09:39:58.458 [main] ERROR com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - Connection timed out: connect
+09:45:36.060 [main] ERROR com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - Connection timed out: connect
+09:48:40.177 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - VoltDB connection granted
+09:48:40.600 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - Getting package name
+09:48:40.713 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - VoltDB connection granted
+09:48:40.954 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - Send amount of sms used to VoltDB
+09:51:42.861 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - VoltDB connection granted
+09:51:43.190 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - Getting uid by MSISDN
+09:51:43.323 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - VoltDB connection granted
+09:51:43.391 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - Getting package name
+09:51:43.527 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - VoltDB connection granted
+09:51:43.814 [main] INFO  com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation - Send amount of sms used to VoltDB

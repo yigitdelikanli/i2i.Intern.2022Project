@@ -1,12 +1,19 @@
 package com.i2i.internship.eyecell;
 
+import akka.actor.ActorSystem;
+import akka.actor.Props;
 import com.i2i.internship.eyeCell.kafka.method.ProducerMethod;
 import com.i2i.internship.eyeCell.kafka.modul.UsageMessage;
 import com.i2i.internship.eyecell.config.OCSConfig;
+import com.i2i.internship.eyecell.listenAkka.Listener;
+import com.i2i.internship.eyecell.voltDbProcess.VoltDbOperation;
+import com.typesafe.config.ConfigFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.concurrent.ExecutionException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class App {
     private static Logger log = LogManager.getLogger(App.class);
@@ -14,7 +21,7 @@ public class App {
     public static void main(String[] args) {
 
 /*
-        Pattern p = Pattern.compile("[^505][0-9]{5}$");
+        Pattern p = Pattern.compile("^505[0-9]{7}$");
         Matcher m = p.matcher("5051234545");
         System.out.println("numara " + m.find());                           // returns true
         System.out.println(m.start());
@@ -33,19 +40,9 @@ public class App {
 /*
         VoltDbOperation operation = new VoltDbOperation();
 
-        operation.sendPrice("5313313131",456);
+        operation.sendSmsAmount("5513852246",50,63);
+
 */
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -55,14 +52,14 @@ public class App {
         //   fileControl(args);
 
 
-/*
+
         // Creating environment
         ActorSystem system = ActorSystem.create("AkkaRemoteServer", ConfigFactory.load());
 
         // Create an actor
         system.actorOf(Props.create(Listener.class), "Listener");
 
-*/
+
    //     kafkaSender("1234569877","voice",555);
 
      //   parseXml();

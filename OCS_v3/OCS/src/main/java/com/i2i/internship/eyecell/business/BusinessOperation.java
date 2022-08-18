@@ -19,7 +19,7 @@ public class BusinessOperation {
     public void start(String MSISDN,String location, String service ,int amount,String opNumber){
 
         priceVariable =0;
-        priceVariable = priceOperation.getUsedPrice(MSISDN,amount,service);
+        priceVariable = priceOperation.getUsedPrice(opNumber,amount,service);
         voltDBSender(MSISDN,service,amount,priceVariable);
         kafkaSender(MSISDN,service,amount,priceVariable);
 
@@ -28,14 +28,13 @@ public class BusinessOperation {
 
     public void voltDBSender(String MSISDN, String service ,int amount,int price){
 
-        if(service =="SMS"){
+        if(service.toUpperCase() =="SMS"){
             voltDbOperation.sendSmsAmount(MSISDN,amount,price);
-            voltDbOperation.sendPrice(MSISDN,price);
         }
-        if(service == "VOICE"){
+        if(service.toUpperCase() == "VOICE"){
             voltDbOperation.sendVoiceAmount(MSISDN,amount,price);
         }
-        if(service =="DATA"){
+        if(service.toUpperCase() =="DATA"){
             voltDbOperation.sendGbAmount(MSISDN,amount,price);
         }
     }
