@@ -8,10 +8,7 @@ import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 import java.time.Duration;
 import java.util.TimeZone;
@@ -65,6 +62,7 @@ public class SF_UpdateOracledbMethod {
                     callableStatement.setLong(4,  price);
 
                     callableStatement.execute();
+                    System.out.println("execute oldu");
                     logger.info("Datas sent to Oracle Database");
                 }
                 else if (usedService.equalsIgnoreCase("voice")){
@@ -76,6 +74,7 @@ public class SF_UpdateOracledbMethod {
                     callableStatement.setLong(4,  price);
 
                     callableStatement.execute();
+                    System.out.println("execute oldu");
                     logger.info("Datas sent to Oracle Database");
                 }
                 else if(usedService.equalsIgnoreCase("sms")){
@@ -87,6 +86,7 @@ public class SF_UpdateOracledbMethod {
                     callableStatement.setLong(4,  price);
 
                     callableStatement.execute();
+                    System.out.println("execute oldu");
                     logger.info("Datas sent to Oracle Database");
                 }
 
