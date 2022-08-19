@@ -5,7 +5,7 @@
 ***Project Name:*** EyeCell
 ***Project Team Name:*** Internship2022
 ### What is EyeCell?
-EyeCell is a mobile, web and desktop telecommunication application that aims to show customers' package information. Customers can login, register, refresh password, see their personal information and lastly and especially see their package information.
+EyeCell is a android, web and ios telecommunication application that aims to show customers' package information. Customers can login, register, refresh password, see their personal information and lastly and especially see their package information.
 ### Which technologies are used in EyeCell?
 * Hazelcast
 * VoltDB
