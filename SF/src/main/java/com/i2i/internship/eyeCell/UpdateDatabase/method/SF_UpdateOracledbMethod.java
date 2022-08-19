@@ -53,8 +53,11 @@ public class SF_UpdateOracledbMethod {
                 TimeZone timeZone = TimeZone.getTimeZone("Asia/Kolkata");
                 TimeZone.setDefault(timeZone);
                 logger.info("Oracle Database connected");
+                //Be careful from here
+
                 CallableStatement callableStatement = null;
                 if(usedService.equalsIgnoreCase("data")){
+                    logger.info("------> DATA <------");
                     callableStatement = connection.prepareCall( "{call package_dmloperations.update_data(?,?,?,?)}");
                     callableStatement.setLong(1,  subscriberID);
                     callableStatement.setString(2,msisdn );
@@ -65,6 +68,7 @@ public class SF_UpdateOracledbMethod {
                     logger.info("Datas sent to Oracle Database");
                 }
                 else if (usedService.equalsIgnoreCase("voice")){
+                    logger.info("------> VOICE <------");
                     callableStatement = connection.prepareCall( "{call package_dmloperations.update_voice(?,?,?,?)}");
                     callableStatement.setLong(1,  subscriberID);
                     callableStatement.setString(2,msisdn );
@@ -75,6 +79,7 @@ public class SF_UpdateOracledbMethod {
                     logger.info("Datas sent to Oracle Database");
                 }
                 else if(usedService.equalsIgnoreCase("sms")){
+                    logger.info("------> SMS <------");
                     callableStatement = connection.prepareCall( "{call package_dmloperations.update_sms(?,?,?,?)}");
                     callableStatement.setLong(1,  subscriberID);
                     callableStatement.setString(2,msisdn );
@@ -84,19 +89,19 @@ public class SF_UpdateOracledbMethod {
                     callableStatement.execute();
                     logger.info("Datas sent to Oracle Database");
                 }
+
+                callableStatement.close();
+                connection.close();
+                Thread.sleep(100);
 /*
                 switch (usedService){
                     case "Data":
-
                         break;
-
                     case "Voice":
                         //CallableStatement
-
                         break;
                     case "Sms":
                         //CallableStatement
-
                         break;
                 }*/
 /*
