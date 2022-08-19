@@ -1,0 +1,305 @@
+.login {
+  min-height: 70vh;
+}
+.bg-image {
+  background-image: url(../src/images/Moon.png);
+  background-size: cover;
+  background-position: center;
+}
+.bg-image-2 {
+  background-image: url(../src/images/Project_Logo.png);
+  width: 250px;
+  height: 230px;
+  background-position: center;
+  margin-left: 250px;
+}
+
+
+
+.reg-container{
+  margin-top: 50px;
+}
+
+.left{
+  position: relative;
+}
+
+.login-heading {
+  font-weight: 300;
+  padding-bottom: 2rem;
+}
+.register-heading{
+  font-weight: 300;
+  margin-left: 1.5rem;
+}
+.btn-login-1{
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  padding: 10px 10px;
+  margin-right: 10px;
+}
+.btn-login-2{
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  padding: 10px 10px;
+  margin-left: 9rem;
+}
+.btn{
+  display: inline-block;
+}
+.btn-reg{
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  padding: 10px 10px;
+  margin-left: 1.5rem;
+}
+
+.invalid
+{
+  border-color: red!important;
+}
+
+.cont-fluid{
+  background: rgb(42, 134, 240);
+  display: flex;
+  height: 100vh;
+  justify-content:space-between;
+  align-items: center;
+  position: relative;
+}
+
+.box{
+  background-color: rgb(0, 18, 182);
+  border: 1px solid black;   
+  display: flex;
+  justify-content: center;
+  
+}
+.remaining-use{
+  width:500px;
+  height: 80vh;
+  border-radius: 5%;
+  position: relative;
+  margin-left: 120px;
+}
+#header{
+  color: white;          
+}
+
+.user-info{
+  width: 700px;
+  height: 30vh;
+  align-self: flex-start; 
+  margin-top: 80px;
+  margin-right: 100px;
+  border-radius: 5%;
+  position: relative;
+}
+
+#packageName{
+  color: rgb(207, 206, 206);
+  position: absolute;
+  top: 60px;
+  left: 30px;
+}
+#duration{
+  color: rgb(207, 206, 206);
+  position: absolute;
+  top: 60px;
+  left: 30px;
+}
+
+.info-dakika{
+  position: absolute;
+  top: 100px;
+  left: -120px;
+}
+#dakika,#internet,#sms{
+  color: #f3f3f3;
+}
+
+.info-internet{
+  position: absolute;
+  top: 280px;
+  left: -120px;
+}
+
+.info-sms{
+  position: absolute;
+  top: 460px;
+  left: -120px;
+}
+
+
+.date{
+  width: 700px;
+  height: 35vh;
+  border-radius: 5%;
+  position: absolute;
+  margin-left: 43.3rem;
+  margin-top: 300px;
+}
+
+#logo{
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  align-self: flex-start;
+
+}
+
+.btn-light{
+  position: absolute;
+  top: 30px;
+  left : 1400px;
+}
+
+.box .percent{
+  width:150;
+  height:150;
+  position: relative;
+}
+.box .percent svg{
+  width:150;
+  height:150;
+  position: absolute;
+  top: 60px;
+  left: -330px;
+}
+.box .percent svg circle{
+  width:150;
+  height:150;
+  fill: none;
+  stroke-width: 10;
+  transform: translate(5px,5px);
+  stroke-dasharray: 440;
+}
+
+.box .percent svg circle:nth-child(1){
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+
+
+
+.box .percent .number{
+  position: absolute;
+  top: -150px;
+  left: -250px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+
+}
+
+.box .percent .number h4{
+  font-size: 30px;
+}
+.box .percent .number h4 span{
+  font-size: 20px;
+}
+
+.box .text{
+  padding: 10px 0 0;
+  color: #999;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.box .percent2{
+  width:150;
+  height:150;
+  position: relative;
+}
+.box .percent2 svg{
+  width:150;
+  height:150;
+  position: absolute;
+  top: 240px;
+  left: -330px;
+}
+.box .percent2 svg circle{
+  width:150;
+  height:150;
+  fill: none;
+  stroke-width: 10;
+  transform: translate(5px,5px);
+  stroke-dasharray: 440;
+
+  
+  
+}
+.box .percent2 svg circle:nth-child(1){
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+.box .percent2 .number2{
+  position: absolute;
+  top: 30px;
+  left: -250px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+
+}
+.box .percent2 .number2 h4{
+  font-size: 30px;
+}
+.box .percent2 .number2 h4 span{
+  font-size: 20px;
+}
+
+.box .percent3{
+  width:150;
+  height:150;
+  position: relative;
+}
+.box .percent3 svg{
+  width:150;
+  height:150;
+  position: absolute;
+  top: 415px;
+  left: -330px;
+}
+.box .percent3 svg circle{
+  width:150;
+  height:150;
+  fill: none;
+  stroke-width: 10;
+  transform: translate(5px,5px);
+  stroke-dasharray: 440;
+  
+  
+}
+.box .percent3 svg circle:nth-child(1){
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+
+.box .percent3 .number3{
+  position: absolute;
+  top: 205px;
+  left: -250px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+
+}
+.box .percent3 .number3 h4{
+  font-size: 30px;
+}
+.box .percent3 .number3 h4 span{
+  font-size: 20px;
+}
+
