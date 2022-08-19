@@ -22,7 +22,7 @@ List of team members and their responsibilities ordered alphabetically.
 | Abdullah UĞUZ        | OCS Server                           | https://github.com/AbdullahUguz         |
 | Mustafa Alperen AKSU | Hazelcast                            | https://github.com/alperenaksu1         |
 | Serkan GENÇER        | IOS                                  | https://github.com/sgencer2001          |
-| Kadir GÜR            | Test (IOS, Android, Web              | https://github.com/kadirgr1             |
+| Kadir GÜR            | Test (IOS, Android, Web)             | https://github.com/kadirgr1             |
 | Ali Said SARITEMUR   | VoltDB                               | https://github.com/AliSaidSaritemur     |
 | Mustafa Oğuz DUMAN   |  DGW                                 | https://github.com/MustafaOguzDuman     |
 | Gizem FIÇICIOĞLU     | Kafka                                | https://github.com/gizemfcc             |
