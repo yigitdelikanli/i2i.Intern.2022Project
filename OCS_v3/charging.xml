@@ -5,12 +5,12 @@
             <service serviceName="voice">
                 <regex>^5[0-5][0-9]{8}$</regex>
                 <round>60</round>
-                <price>0.90</price>
+                <price>0.50</price>
             </service>
             <service serviceName="voice118">
                 <regex>^118[0-9]{4}$</regex>
                 <round>60</round>
-                <price>5</price>
+                <price>2</price>
             </service>
             <service serviceName="sms" >
                 <regex>^5[0-5][0-9]{8}$</regex>
@@ -19,8 +19,8 @@
             </service>
             <service serviceName="gb">
                 <regex>[A-Z]</regex>
-                <round>100000</round>
-                <price>3</price>
+                <round>1</round>
+                <price>1.5</price>
             </service>
 
         </zone>

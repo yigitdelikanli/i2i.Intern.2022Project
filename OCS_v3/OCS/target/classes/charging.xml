@@ -3,20 +3,26 @@
     <zones>
         <zone>
             <service serviceName="voice">
-                <regex>90</regex>
+                <regex>^5[0-5][0-9]{8}$</regex>
                 <round>60</round>
-                <price>0.90</price>
+                <price>0.50</price>
+            </service>
+            <service serviceName="voice118">
+                <regex>^118[0-9]{4}$</regex>
+                <round>60</round>
+                <price>2</price>
             </service>
             <service serviceName="sms" >
-                <regex>70</regex>
-                <round>30</round>
+                <regex>^5[0-5][0-9]{8}$</regex>
+                <round>1</round>
                 <price>1</price>
             </service>
             <service serviceName="gb">
-                <regex>80</regex>
-                <round>2</round>
+                <regex>[A-Z]</regex>
+                <round>100000</round>
                 <price>3</price>
             </service>
+
         </zone>
     </zones>
 

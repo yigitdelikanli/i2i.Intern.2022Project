@@ -46,28 +46,34 @@ public class PriceOperation {
 
     public int getUsedPrice(String opNumber,int amount,String service){
         price =0;
-
-        if(service.toUpperCase() =="SMS" && regexControl(opNumber,smsService.getRegex())){
+        log.info("Price Operation Running ");
+        if(service.toUpperCase().equals("SMS") && regexControl(opNumber,smsService.getRegex())){
+            amount = amount*3;
             price = (int) (amount* smsService.getPrice());
-
+            log.info("SMS PRICE AMOUNT : -> "+price);
         }
-        if(service.toUpperCase() =="DATA" && regexControl(opNumber,gbService.getRegex())){
+        if(service.toUpperCase().equals("DATA") && regexControl(opNumber,gbService.getRegex())){
             price = (int) ((amount/gbService.getRound())* gbService.getPrice());
+            log.info("DATA PRICE AMOUNT : -> "+price);
 
         }
-        if(service.toUpperCase() =="VOICE" && regexControl(opNumber,voiceService.getRegex())){
-            price = (int) ((amount/voiceService.getRound())* voiceService.getPrice());
+        if(service.toUpperCase().equals("VOICE")  && regexControl(opNumber,voiceService.getRegex())){
+            price = (int) (amount* voiceService.getPrice());
+            log.info("VOICE PRICE AMOUNT : -> "+price);
 
         }
-        if(service.toUpperCase() =="VOICE" && regexControl(opNumber,voice118Service.getRegex())){
-            price = (int) ((amount/voice118Service.getRound())* voice118Service.getPrice());
+        if(service.toUpperCase().equals("VOICE") && regexControl(opNumber,voice118Service.getRegex())){
+            price = (int) (amount* voice118Service.getPrice());
+            log.info("VOICE 118 PRICE AMOUNT : -> "+price);
 
         }
+        log.info("Price Operation End "+price);
         return price;
 
     }
 
     private boolean regexControl(String opNumber,String regex){
+        log.info("Regex Method Start");
         Pattern p = Pattern.compile(regex); //REGEX
         Matcher m = p.matcher(opNumber); //MSISDN
 

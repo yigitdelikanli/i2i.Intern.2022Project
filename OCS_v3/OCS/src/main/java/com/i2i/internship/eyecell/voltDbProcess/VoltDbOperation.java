@@ -15,17 +15,24 @@ public class VoltDbOperation {
     private Client client;
     private Logger logger = LogManager.getLogger(VoltDbOperation.class);
 
-    public VoltDbOperation(){    //String id, int port
+    public VoltDbOperation(){
         this.id="34.159.58.171";
         this.port=49153;
+        try {
+            this.client=getClientVoltDB();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ProcCallException e) {
+            e.printStackTrace();
+        }
     }
 
-    public Client getConnectionVoltDB() throws IOException, ProcCallException {
+    public Client getClientVoltDB() throws IOException, ProcCallException {
 
         ClientConfig config = new ClientConfig ( "advent",  "xYZZy");
         Client client = ClientFactory.createClient(config);
         client.createConnection ( id,port);
-        logger.info("VoltDB connection granted");
+        logger.info("VoltDB Client Granted");
 
         return  client;
     }
@@ -33,9 +40,9 @@ public class VoltDbOperation {
     public String getPackageName(String MSISDN){
 
         try {
-            client =getConnectionVoltDB();
-            response = client.callProcedure("getPackage",MSISDN); //"5061176561"
-            logger.info("Getting package name");
+           // client = getClientVoltDB();
+            response = client.callProcedure("getPackage",MSISDN);
+            logger.info("Getting Package Name");
         } catch (IOException e) {
             logger.error(e.getMessage());
             e.printStackTrace();
@@ -52,9 +59,9 @@ public class VoltDbOperation {
     public long getUidByMSISDN(String MSISDN){
 
         try {
-            client = getConnectionVoltDB();
+         //   client = getClientVoltDB();
             response = client.callProcedure("getMSISDNWithId",MSISDN);
-            logger.info("Getting uid by MSISDN");
+            logger.info("Getting Uid By MSISDN");
 
         } catch (IOException e) {
             logger.error(e.getMessage());
@@ -64,12 +71,8 @@ public class VoltDbOperation {
             e.printStackTrace();
         }
 
-
         VoltTable table3 =response.getResults()[0];
         table3.advanceRow();
-
-        System.out.println(table3.getLong(0));
-
         return table3.getLong(0);
     }
 
@@ -78,9 +81,8 @@ public class VoltDbOperation {
         try {
             int uid= (int) getUidByMSISDN(MSISDN);
             String packageName = getPackageName(MSISDN);
-
-            client = getConnectionVoltDB();
-            client.callProcedure("updateBalanceVoice",usedAmount,uid,packageName,price); // price eklenecek
+        //    client = getClientVoltDB();
+            client.callProcedure("updateBalanceVoice",uid,usedAmount,packageName,price);
             logger.info("Send amount of voice used to VoltDB");
 
         } catch (IOException e) {
@@ -96,12 +98,11 @@ public class VoltDbOperation {
     public void sendSmsAmount(String MSISDN, int usedAmount,int price){
 
         try {
-            System.out.println("geldi");
             int uid= (int) getUidByMSISDN(MSISDN);
             String packageName = getPackageName(MSISDN);
 
-            client = getConnectionVoltDB();
-            client.callProcedure("updateBalanceSMS",7,usedAmount,packageName,price); // price eklenecek
+         //   client = getClientVoltDB();
+            client.callProcedure("updateBalanceSMS",uid,usedAmount,packageName,price);
             logger.info("Send amount of sms used to VoltDB");
 
         } catch (IOException e) {
@@ -119,9 +120,8 @@ public class VoltDbOperation {
         try {
             int uid= (int) getUidByMSISDN(MSISDN);
             String packageName = getPackageName(MSISDN);
-
-            client = getConnectionVoltDB();
-            client.callProcedure("updateBalanceData",uid,usedAmount,packageName,price); // price eklenecek
+       //     client = getClientVoltDB();
+            client.callProcedure("updateBalanceDATA",uid,usedAmount,packageName,price);
             logger.info("Send amount of gb used to VoltDB");
 
         } catch (IOException e) {
