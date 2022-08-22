@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="0-central-repo" />
+      <option name="name" value="central-repo" />
+      <option name="url" value="https://repo.maven.apache.org/maven2/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="2-hazelcast-repository" />
+      <option name="name" value="2-hazelcast-repository" />
+      <option name="url" value="http://172.30.10.51:8081/artifactory/Hazelcast/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="1-local" />
+      <option name="name" value="maven-repo-archiva.local-releases" />
+      <option name="url" value="http://172.30.10.51:8081/artifactory/libs-release/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="1-local-snapshots" />
+      <option name="name" value="maven-repo-archiva.local-snapshots" />
+      <option name="url" value="http://172.30.10.51:8081/artifactory/libs-snapshot/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="4-billing" />
+      <option name="name" value="maven-repo-archiva.billing-releases" />
+      <option name="url" value="http://172.30.10.105:8090/repository/internal/" />
+    </remote-repository>
+  </component>
+</project>

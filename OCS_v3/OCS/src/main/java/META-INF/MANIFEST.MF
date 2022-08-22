@@ -1,5 +1,0 @@
-Manifest-Version: 1.0
-Main-Class: com.i2i.internship.eyeCell.exampleKafka.ProducerTest
-Multi-Release: true
-
-
