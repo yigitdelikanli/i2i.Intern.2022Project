@@ -9,8 +9,8 @@ public class ProducerTest {
         UsageMessage msg = new UsageMessage();
         msg.setUsedService("Voice");
         msg.setUsedAmount(5);
-        msg.setMsisdn("5350857286");
-        msg.setPrice(2);
+        msg.setMsisdn("5061176561");
+        msg.setPrice(10);
         msg.setSubscriberID(1);
         try {
             ProducerMethod.runProducer(msg);
