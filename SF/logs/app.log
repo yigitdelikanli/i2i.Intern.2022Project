@@ -1,0 +1,1228 @@
+2022-08-16 13:57:46,475 INFO c.m.ProducerMethod [main] Producer created.
+2022-08-16 13:57:47,153 INFO c.m.usageMessageSerializer [main] Serializing...
+2022-08-16 13:58:08,616 INFO c.m.ProducerMethod [main] Message Send
+2022-08-16 15:21:45,756 INFO c.m.ConsumerMethod [main] No message to read
+2022-08-16 15:21:46,768 INFO c.m.ConsumerMethod [main] No message to read
+2022-08-16 15:21:47,778 INFO c.m.ConsumerMethod [main] No message to read
+2022-08-16 15:21:48,786 INFO c.m.ConsumerMethod [main] No message to read
+2022-08-16 15:21:49,127 INFO c.m.ConsumerMethod [main] Message received
+2022-08-16 15:21:49,128 INFO c.m.ConsumerMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 13, CreateTime = 1660648995435, serialized key size = -1, serialized value size = 61, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"msisdn":"23424324234","usedAmount":123,"usedService":"sms"})
+2022-08-16 15:21:50,143 INFO c.m.ConsumerMethod [main] No message to read
+2022-08-16 15:21:51,156 INFO c.m.ConsumerMethod [main] No message to read
+2022-08-16 15:21:52,172 INFO c.m.ConsumerMethod [main] No message to read
+2022-08-16 15:21:53,188 INFO c.m.ConsumerMethod [main] No message to read
+2022-08-16 15:21:54,191 INFO c.m.ConsumerMethod [main] No message to read
+2022-08-16 15:21:55,201 INFO c.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:37,575 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:38,582 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:39,597 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:40,602 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:41,603 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:41,661 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-17 17:23:41,725 INFO c.i.i.e.k.m.ConsumerMethod [main] Message received
+2022-08-17 17:23:41,725 INFO c.i.i.e.k.m.ConsumerMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 24, CreateTime = 1660742970983, serialized key size = -1, serialized value size = 62, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:1234569877, Used Amount: 555, Used Service: voice)
+2022-08-17 17:23:42,742 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:43,756 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:44,771 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:45,786 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 17:23:46,793 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:46:44,007 INFO c.i.i.e.k.m.ProducerMethod [main] Producer created.
+2022-08-17 18:46:45,038 INFO c.i.i.e.k.m.UsageMessageSerializer [main] Serializing...
+2022-08-17 18:46:45,427 INFO c.i.i.e.k.m.ProducerMethod [main] Message Send
+2022-08-17 18:47:01,491 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:02,505 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:03,516 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:04,525 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:05,534 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:06,544 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:07,550 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:08,553 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:09,566 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:10,571 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:11,582 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:12,586 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:13,590 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:13,946 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-17 18:47:14,172 INFO c.i.i.e.k.m.ConsumerMethod [main] Message received
+2022-08-17 18:47:14,172 INFO c.i.i.e.k.m.ConsumerMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 26, CreateTime = 1660751205037, serialized key size = -1, serialized value size = 87, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5350857286, Used Amount: 5, Used Service: Voice)
+2022-08-17 18:47:15,181 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:16,194 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:17,211 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:18,224 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-17 18:47:19,230 INFO c.i.i.e.k.m.ConsumerMethod [main] No message to read
+2022-08-19 13:06:06,173 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:07,179 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:08,188 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:09,188 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:10,188 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:11,198 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:12,199 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:13,200 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:14,200 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:15,212 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:16,212 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:17,215 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:18,215 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:19,227 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:20,228 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:21,228 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:22,229 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:23,238 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:24,238 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:25,239 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:26,239 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:27,240 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:28,241 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:29,248 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:30,248 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:31,262 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:32,262 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:33,263 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:34,265 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:35,265 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:36,271 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:37,271 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:38,272 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:39,274 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:40,275 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:41,280 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:42,282 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:43,282 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:44,283 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:45,288 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:46,288 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:47,288 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:48,289 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:49,291 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:50,292 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:51,301 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:52,302 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:53,315 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:54,315 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:55,322 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:56,322 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:57,330 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:58,330 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:06:59,333 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:00,335 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:01,344 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:11,804 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:12,818 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:13,818 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:14,831 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:15,835 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:16,845 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:17,846 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:18,847 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:19,854 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:20,857 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:21,857 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:22,868 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:23,868 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:24,869 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:25,874 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:26,874 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:27,875 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:28,886 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:29,886 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:30,887 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:31,887 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:32,887 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:33,902 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:34,907 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:35,907 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:36,912 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:37,912 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:38,912 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:39,915 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:40,915 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:41,916 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:42,917 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:43,917 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:44,917 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:45,922 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:46,922 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:47,932 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:48,933 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:49,948 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:50,948 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:51,948 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:52,951 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:53,951 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:07:54,955 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:12,485 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:13,495 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:14,496 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:15,508 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:16,509 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:17,510 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:18,515 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:19,515 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:20,524 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:21,525 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:22,531 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:23,535 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:24,536 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:25,546 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:26,547 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:27,547 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:28,548 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:29,557 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:30,558 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:31,564 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:32,564 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:33,573 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:34,574 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:35,576 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:36,577 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:37,577 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:38,590 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:39,590 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:40,590 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:41,604 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:42,605 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:43,605 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:44,613 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:45,613 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:46,626 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:47,626 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:48,627 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:49,627 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:50,642 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:51,643 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:52,643 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:53,650 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:54,651 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:55,652 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:56,653 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:57,662 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:58,663 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 13:14:58,701 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 13:14:58,749 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 13:14:58,749 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 340, CreateTime = 1660895077668, serialized key size = -1, serialized value size = 99, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 1121584646, Used Service: DATA, Price: 33645, UID: 1)
+2022-08-19 13:14:59,717 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 10:50:24,054 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:25,070 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:26,076 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:27,085 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:28,091 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:29,093 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:30,097 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:31,101 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:32,107 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:33,107 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:34,112 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:35,114 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:36,123 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:37,127 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:38,134 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:39,147 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:40,148 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:41,152 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:42,166 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:43,174 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 10:50:43,381 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,436 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,437 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,437 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,437 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,437 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,438 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,438 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,438 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,438 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,438 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,439 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,439 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,439 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,439 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,439 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,440 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,440 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,440 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,440 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,440 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,441 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,441 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,441 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,441 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,442 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,442 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,442 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,442 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,443 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,443 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 10:50:43,446 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 10:50:43,446 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 340, CreateTime = 1660895077668, serialized key size = -1, serialized value size = 99, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 1121584646, Used Service: DATA, Price: 33645, UID: 1)
+2022-08-19 10:50:44,236 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:04:01,225 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:04:02,243 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:04:03,249 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:04:04,252 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:04:05,266 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:04:05,576 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,631 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,631 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,632 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,632 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,632 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,632 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,632 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,633 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,633 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,633 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,633 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,633 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,634 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,634 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,634 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,634 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,634 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,635 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,635 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,635 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,635 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,636 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,636 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,636 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,636 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,637 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,637 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,637 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,637 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,638 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:04:05,641 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:04:05,641 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 340, CreateTime = 1660895077668, serialized key size = -1, serialized value size = 99, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 1121584646, Used Service: DATA, Price: 33645, UID: 1)
+2022-08-19 11:04:06,974 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:04:06,974 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:05:15,189 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:15,504 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:15,504 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 341, CreateTime = 1660895099742, serialized key size = -1, serialized value size = 89, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 421, Used Service: VOICE, Price: 3, UID: 1)
+2022-08-19 11:05:16,399 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:16,399 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:05:16,464 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:16,730 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:16,730 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 342, CreateTime = 1660895133884, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 1, Used Service: SMS, Price: 1, UID: 1)
+2022-08-19 11:05:17,389 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:17,389 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:05:17,467 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:17,748 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:17,748 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 343, CreateTime = 1660895136346, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 1, Used Service: SMS, Price: 1, UID: 1)
+2022-08-19 11:05:18,550 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:18,550 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:05:18,673 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:18,993 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:18,993 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 344, CreateTime = 1660895137255, serialized key size = -1, serialized value size = 99, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 1242602826, Used Service: DATA, Price: 37278, UID: 2)
+2022-08-19 11:05:19,776 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:19,776 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:05:19,864 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:20,155 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:20,155 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 345, CreateTime = 1660895138205, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 1, Used Service: SMS, Price: 1, UID: 1)
+2022-08-19 11:05:21,237 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:21,237 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:05:21,360 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:21,623 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:21,623 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 346, CreateTime = 1660895138980, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 3224, Used Service: VOICE, Price: 26, UID: 2)
+2022-08-19 11:05:22,527 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:22,527 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:05:22,618 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:22,946 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:22,946 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 347, CreateTime = 1660895140081, serialized key size = -1, serialized value size = 99, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 1187148446, Used Service: DATA, Price: 35613, UID: 2)
+2022-08-19 11:05:23,843 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:23,843 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:05:23,911 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:24,174 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:24,174 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 348, CreateTime = 1660895140951, serialized key size = -1, serialized value size = 99, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 1187835250, Used Service: DATA, Price: 35634, UID: 1)
+2022-08-19 11:05:24,917 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:24,917 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:05:24,989 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:25,269 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:25,269 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 349, CreateTime = 1660895142284, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 1, Used Service: SMS, Price: 1, UID: 1)
+2022-08-19 11:05:26,421 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:26,421 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:05:26,537 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:26,940 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:26,940 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 350, CreateTime = 1660895143716, serialized key size = -1, serialized value size = 89, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 837, Used Service: VOICE, Price: 6, UID: 1)
+2022-08-19 11:05:27,521 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:27,521 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:05:27,584 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:27,847 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:27,847 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 351, CreateTime = 1660895144934, serialized key size = -1, serialized value size = 89, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 177, Used Service: VOICE, Price: 1, UID: 2)
+2022-08-19 11:05:28,424 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:28,424 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:05:28,491 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:28,762 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:28,762 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 352, CreateTime = 1660895146036, serialized key size = -1, serialized value size = 99, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 1144209234, Used Service: DATA, Price: 34326, UID: 2)
+2022-08-19 11:05:29,518 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:29,518 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:05:29,587 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:29,849 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:29,849 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 353, CreateTime = 1660895167970, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 1, Used Service: SMS, Price: 1, UID: 2)
+2022-08-19 11:05:30,720 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:30,720 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:05:30,783 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:31,075 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:31,075 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 354, CreateTime = 1660895168659, serialized key size = -1, serialized value size = 99, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 1150380330, Used Service: DATA, Price: 34509, UID: 2)
+2022-08-19 11:05:31,834 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:31,834 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:05:31,899 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:32,177 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:32,177 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 355, CreateTime = 1660895169356, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 1, Used Service: SMS, Price: 1, UID: 2)
+2022-08-19 11:05:32,988 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:32,988 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:05:33,150 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:33,555 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:33,555 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 356, CreateTime = 1660895191358, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 1, Used Service: SMS, Price: 1, UID: 2)
+2022-08-19 11:05:34,437 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:34,437 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:05:34,510 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:34,787 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:34,787 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 357, CreateTime = 1660895203556, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 3481, Used Service: VOICE, Price: 29, UID: 1)
+2022-08-19 11:05:35,720 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:35,720 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:05:35,858 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:36,159 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:36,159 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 358, CreateTime = 1660895215985, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 1, Used Service: SMS, Price: 1, UID: 2)
+2022-08-19 11:05:37,012 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:37,012 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:05:37,121 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:37,828 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:37,828 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 359, CreateTime = 1660895216732, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 1, Used Service: SMS, Price: 1, UID: 2)
+2022-08-19 11:05:38,861 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:38,861 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:05:38,946 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:39,258 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:39,258 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 360, CreateTime = 1660895217461, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 1, Used Service: SMS, Price: 1, UID: 2)
+2022-08-19 11:05:39,899 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:39,899 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:05:39,963 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:40,236 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:40,236 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 361, CreateTime = 1660895218228, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 1, Used Service: SMS, Price: 1, UID: 1)
+2022-08-19 11:05:40,987 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:40,987 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:05:41,050 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:41,317 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:41,317 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 362, CreateTime = 1660895218987, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 2159, Used Service: VOICE, Price: 17, UID: 2)
+2022-08-19 11:05:41,897 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:41,897 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:05:41,962 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:42,238 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:42,238 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 363, CreateTime = 1660895219707, serialized key size = -1, serialized value size = 97, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 216046451, Used Service: DATA, Price: 6480, UID: 2)
+2022-08-19 11:05:42,806 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:42,806 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:05:42,868 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:43,133 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:43,133 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 364, CreateTime = 1660895221521, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 1463, Used Service: VOICE, Price: 12, UID: 2)
+2022-08-19 11:05:43,753 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:43,753 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:05:43,818 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:44,109 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:44,109 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 365, CreateTime = 1660895222275, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 1, Used Service: SMS, Price: 1, UID: 1)
+2022-08-19 11:05:44,949 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:44,949 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:05:45,017 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:45,282 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:45,282 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 366, CreateTime = 1660895223132, serialized key size = -1, serialized value size = 99, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 1017894294, Used Service: DATA, Price: 30534, UID: 1)
+2022-08-19 11:05:45,892 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:45,892 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:05:45,963 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:46,259 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:46,259 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 367, CreateTime = 1660895223909, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 2211, Used Service: VOICE, Price: 18, UID: 2)
+2022-08-19 11:05:46,933 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:46,934 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:05:47,024 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:47,353 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:47,353 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 368, CreateTime = 1660895224613, serialized key size = -1, serialized value size = 97, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 220108295, Used Service: DATA, Price: 6603, UID: 1)
+2022-08-19 11:05:47,966 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:47,966 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:05:48,053 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:48,370 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:48,370 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 369, CreateTime = 1660895225362, serialized key size = -1, serialized value size = 99, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 1145785596, Used Service: DATA, Price: 34371, UID: 1)
+2022-08-19 11:05:49,033 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:49,033 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:05:49,150 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:49,419 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:05:49,419 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 370, CreateTime = 1660895226078, serialized key size = -1, serialized value size = 99, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 1252687501, Used Service: DATA, Price: 37578, UID: 2)
+2022-08-19 11:05:50,079 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:05:50,079 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:05:50,174 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:05:51,460 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:05:52,466 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:05:53,466 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:05:54,467 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:05:55,479 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:05:56,479 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:05:57,486 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:05:58,487 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:05:59,494 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:00,495 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:01,504 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:02,508 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:03,508 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:04,517 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:05,517 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:06,526 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:07,527 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:08,528 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:09,534 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:10,537 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:11,537 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:12,538 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:13,542 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:14,542 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:15,550 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:16,551 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:17,564 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:18,564 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:19,565 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:20,565 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:21,577 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:22,577 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:23,586 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:24,586 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:25,597 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:26,601 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:27,601 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:28,601 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:29,602 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:30,608 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:31,608 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:32,623 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:33,623 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:34,623 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:35,637 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:36,637 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:37,651 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:38,651 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:39,665 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:40,666 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:41,671 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:42,672 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:43,673 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:44,673 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:45,678 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:46,678 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:47,678 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:48,687 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:49,687 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:50,696 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:51,696 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:52,707 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:53,707 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:54,708 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:55,716 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:56,716 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:57,716 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:58,716 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:06:59,722 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:00,726 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:01,727 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:02,729 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:03,741 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:04,741 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:05,741 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:06,753 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:07,753 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:08,754 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:09,763 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:10,763 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:11,771 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:12,771 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:13,771 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:14,784 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:15,785 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:16,786 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:17,787 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:18,787 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:19,793 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:20,794 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:21,804 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:22,805 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:23,805 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:24,820 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:25,820 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:26,820 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:27,822 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:28,822 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:29,823 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:30,836 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:31,836 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:32,841 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:33,841 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:34,841 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:35,848 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:36,849 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:37,849 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:38,849 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:39,850 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:40,858 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:41,860 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:42,861 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:43,861 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:44,868 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:45,868 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:46,880 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:47,880 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:48,880 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:49,887 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:50,888 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:51,895 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:52,902 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:53,902 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:54,910 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:55,915 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:56,916 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:57,929 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:07:58,068 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:07:58,069 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:07:58,069 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 371, CreateTime = 1660896478218, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 3, Used Service: SMS, Price: 3, UID: 3)
+2022-08-19 11:07:58,785 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:07:58,785 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:07:58,839 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:08:00,113 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:01,113 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:02,114 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:03,115 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:04,120 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:05,128 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:06,128 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:07,138 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:08,144 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:09,153 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:10,154 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:11,155 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:12,155 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:13,156 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:14,157 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:15,160 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:16,172 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:17,180 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:18,181 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:19,182 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:20,188 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:21,195 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:21,648 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:08:21,649 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:08:21,649 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 372, CreateTime = 1660896480274, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 2576, Used Service: VOICE, Price: 21, UID: 2)
+2022-08-19 11:08:22,672 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:08:22,672 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:08:22,725 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:08:23,066 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:08:23,067 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:08:23,067 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 373, CreateTime = 1660896503139, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 3, Used Service: SMS, Price: 3, UID: 3)
+2022-08-19 11:08:24,191 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:08:24,191 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:08:24,334 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:08:24,832 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:08:24,833 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:08:24,833 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 374, CreateTime = 1660896504177, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 2783, Used Service: VOICE, Price: 23, UID: 3)
+2022-08-19 11:08:26,154 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:08:26,154 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:08:26,250 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:08:26,694 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:08:26,695 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:08:26,695 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 375, CreateTime = 1660896505857, serialized key size = -1, serialized value size = 89, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 512, Used Service: VOICE, Price: 4, UID: 2)
+2022-08-19 11:08:27,277 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:08:27,277 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:08:27,335 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:08:27,589 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:08:27,591 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:08:27,591 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 376, CreateTime = 1660896507475, serialized key size = -1, serialized value size = 89, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 519, Used Service: VOICE, Price: 4, UID: 3)
+2022-08-19 11:08:28,142 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:08:28,142 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:08:28,210 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:08:29,488 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:30,491 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:31,492 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:32,501 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:33,502 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:34,502 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:35,516 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:36,517 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:37,517 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:38,528 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:38,851 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:08:38,852 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:08:38,853 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 377, CreateTime = 1660896518965, serialized key size = -1, serialized value size = 93, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 91718, Used Service: DATA, Price: 2751, UID: 1)
+2022-08-19 11:08:39,514 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:08:39,514 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:08:39,567 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:08:39,887 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:08:39,888 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:08:39,888 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 378, CreateTime = 1660896519813, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 3, Used Service: SMS, Price: 3, UID: 1)
+2022-08-19 11:08:40,419 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:08:40,419 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:08:40,490 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:08:40,747 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:08:40,748 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:08:40,748 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 379, CreateTime = 1660896520524, serialized key size = -1, serialized value size = 94, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 222158, Used Service: DATA, Price: 6663, UID: 2)
+2022-08-19 11:08:41,321 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:08:41,321 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:08:41,371 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:08:42,626 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:43,626 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:44,629 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:45,632 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:46,636 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:47,638 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:48,644 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:49,649 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:50,650 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:51,651 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:52,651 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:53,652 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:54,664 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:55,666 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:56,666 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:57,682 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:58,682 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:08:59,694 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:00,695 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:01,699 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:02,072 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:09:02,073 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:09:02,073 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 380, CreateTime = 1660896521207, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 3, Used Service: SMS, Price: 3, UID: 2)
+2022-08-19 11:09:02,628 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:09:02,628 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:09:02,695 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:09:03,012 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:09:03,014 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:09:03,014 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 381, CreateTime = 1660896543039, serialized key size = -1, serialized value size = 94, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 272881, Used Service: DATA, Price: 8184, UID: 1)
+2022-08-19 11:09:04,496 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:09:04,496 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:09:04,562 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:09:04,891 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:09:04,892 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:09:04,892 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:09:04,892 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 382, CreateTime = 1660896544122, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 3, Used Service: SMS, Price: 3, UID: 3)
+2022-08-19 11:09:05,728 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:09:05,728 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:09:05,781 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:09:06,032 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:09:06,032 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 383, CreateTime = 1660896545090, serialized key size = -1, serialized value size = 96, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 1207209, Used Service: DATA, Price: 36216, UID: 3)
+2022-08-19 11:09:06,683 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:09:06,683 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:09:06,758 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:09:07,115 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:09:07,116 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:09:07,116 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 384, CreateTime = 1660896545875, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 3, Used Service: SMS, Price: 3, UID: 1)
+2022-08-19 11:09:08,284 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:09:08,284 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:09:08,465 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:09:09,853 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:10,861 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:11,862 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:12,866 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:13,866 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:14,867 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:15,875 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:16,875 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:17,177 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:09:17,177 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:09:17,178 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 385, CreateTime = 1660896557177, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 2819, Used Service: VOICE, Price: 23, UID: 2)
+2022-08-19 11:09:17,815 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:09:17,815 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:09:17,866 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:09:18,224 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:09:18,225 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:09:18,225 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 386, CreateTime = 1660896558335, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 2839, Used Service: VOICE, Price: 23, UID: 2)
+2022-08-19 11:09:19,149 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:09:19,149 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:09:19,202 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:09:20,454 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:21,455 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:22,460 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:23,462 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:24,462 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:25,467 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:26,467 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:27,475 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:28,475 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:29,489 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:30,489 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:31,503 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:32,504 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:33,518 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:34,519 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:35,519 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:36,520 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:37,521 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:38,534 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:39,534 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:40,545 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:41,545 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:42,545 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:43,560 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:44,561 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:45,561 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:46,576 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:47,576 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:09:48,588 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:04,115 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:05,118 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:06,121 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:07,123 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:07,252 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:11:07,306 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:11:07,306 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:11:07,306 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:11:07,307 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:11:07,307 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:11:07,307 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:11:07,307 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:11:07,307 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:11:07,308 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:11:07,308 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:11:07,312 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:11:07,313 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 387, CreateTime = 1660896559531, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 1910, Used Service: VOICE, Price: 15, UID: 2)
+2022-08-19 11:11:08,097 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:11:08,097 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:11:08,243 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:11:08,503 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:11:08,503 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 388, CreateTime = 1660896593388, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 3, Used Service: SMS, Price: 3, UID: 2)
+2022-08-19 11:11:09,006 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:11:09,006 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:11:09,060 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:11:09,333 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:11:09,333 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 389, CreateTime = 1660896594650, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 3, Used Service: SMS, Price: 3, UID: 3)
+2022-08-19 11:11:09,811 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:11:09,811 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:11:09,865 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:11:10,117 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:11:10,117 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 390, CreateTime = 1660896595238, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 2197, Used Service: VOICE, Price: 18, UID: 3)
+2022-08-19 11:11:10,604 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:11:10,605 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:11:10,656 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:11:10,931 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:11:10,931 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 391, CreateTime = 1660896595846, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 2243, Used Service: VOICE, Price: 18, UID: 3)
+2022-08-19 11:11:11,413 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:11:11,413 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:11:11,466 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:11:11,733 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:11:11,733 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 392, CreateTime = 1660896618292, serialized key size = -1, serialized value size = 96, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 1051330, Used Service: DATA, Price: 31539, UID: 2)
+2022-08-19 11:11:12,230 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:11:12,230 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:11:12,285 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:11:12,539 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:11:12,539 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 393, CreateTime = 1660896619795, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 3, Used Service: SMS, Price: 3, UID: 3)
+2022-08-19 11:11:13,009 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:11:13,009 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:11:13,062 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:11:13,311 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:11:13,311 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 394, CreateTime = 1660896621449, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 3, Used Service: SMS, Price: 3, UID: 2)
+2022-08-19 11:11:13,799 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:11:13,799 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:11:13,850 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:11:14,102 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:11:14,102 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 395, CreateTime = 1660896643101, serialized key size = -1, serialized value size = 95, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 426572, Used Service: DATA, Price: 12795, UID: 2)
+2022-08-19 11:11:14,597 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:11:14,597 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:11:14,649 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:11:14,903 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:11:14,903 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 396, CreateTime = 1660896654966, serialized key size = -1, serialized value size = 96, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 1187896, Used Service: DATA, Price: 35634, UID: 2)
+2022-08-19 11:11:15,389 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:11:15,389 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:11:15,445 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:11:15,704 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:11:15,704 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 397, CreateTime = 1660896656154, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 3, Used Service: SMS, Price: 3, UID: 2)
+2022-08-19 11:11:16,263 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:11:16,263 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:11:16,317 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:11:17,572 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:18,041 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:11:18,042 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:11:18,042 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 398, CreateTime = 1660896657222, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 2132, Used Service: VOICE, Price: 17, UID: 1)
+2022-08-19 11:11:18,533 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:11:18,533 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:11:18,595 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:11:18,903 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:11:18,904 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:11:18,904 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 399, CreateTime = 1660896678947, serialized key size = -1, serialized value size = 95, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 361264, Used Service: DATA, Price: 10836, UID: 2)
+2022-08-19 11:11:19,378 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:11:19,378 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:11:19,431 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:11:20,693 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:21,693 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:22,694 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:23,700 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:24,708 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:25,711 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:26,711 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:27,712 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:33,256 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:34,275 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:35,276 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:36,289 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:37,304 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:38,309 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:39,313 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:40,328 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:41,332 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:42,338 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:43,341 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:44,346 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:45,350 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:46,353 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:47,358 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:48,360 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:49,363 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:50,369 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:51,377 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:52,382 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:53,387 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:54,389 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:55,391 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:56,395 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:57,399 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:58,401 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:11:59,415 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:00,421 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:01,426 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:02,433 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:03,440 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:04,445 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:05,459 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:06,463 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:07,463 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:08,466 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:09,481 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:10,484 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:11,492 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:12,224 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:12:12,279 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:12:12,279 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:12:12,279 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:12:12,283 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:12:12,283 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 400, CreateTime = 1660896688226, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 3, Used Service: SMS, Price: 3, UID: 2)
+2022-08-19 11:12:13,118 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:12:13,118 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:12:13,251 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:12:13,504 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:12:13,504 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 401, CreateTime = 1660896688950, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 2088, Used Service: VOICE, Price: 17, UID: 3)
+2022-08-19 11:12:13,988 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:12:13,988 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:12:14,041 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:12:14,295 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:12:14,295 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 402, CreateTime = 1660896689632, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 3, Used Service: SMS, Price: 3, UID: 2)
+2022-08-19 11:12:14,779 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:12:14,779 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:12:14,830 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:12:15,081 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:12:15,081 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 403, CreateTime = 1660896690272, serialized key size = -1, serialized value size = 95, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 574984, Used Service: DATA, Price: 17247, UID: 2)
+2022-08-19 11:12:15,694 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:12:15,694 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:12:15,749 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:12:16,057 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:12:16,058 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:12:16,058 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:12:16,058 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:12:16,059 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:12:16,059 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 404, CreateTime = 1660896712405, serialized key size = -1, serialized value size = 94, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 137211, Used Service: DATA, Price: 4116, UID: 2)
+2022-08-19 11:12:16,544 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:12:16,544 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:12:16,599 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:12:16,857 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:12:16,857 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 405, CreateTime = 1660896734195, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 3, Used Service: SMS, Price: 3, UID: 2)
+2022-08-19 11:12:17,506 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:12:17,506 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:12:17,633 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:12:17,968 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:12:17,968 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 406, CreateTime = 1660896734809, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 3, Used Service: SMS, Price: 3, UID: 1)
+2022-08-19 11:12:18,897 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:12:18,897 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:12:19,037 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:12:19,397 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:12:19,397 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 407, CreateTime = 1660896735400, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 3409, Used Service: VOICE, Price: 28, UID: 3)
+2022-08-19 11:12:19,960 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:12:19,960 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:12:20,030 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:12:20,304 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:12:20,305 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:12:20,305 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 408, CreateTime = 1660896736175, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 3, Used Service: SMS, Price: 3, UID: 3)
+2022-08-19 11:12:21,230 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:12:21,230 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:12:21,285 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:12:21,540 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:12:21,541 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:12:21,541 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:12:21,542 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:12:21,542 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 409, CreateTime = 1660896736941, serialized key size = -1, serialized value size = 89, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 601, Used Service: VOICE, Price: 5, UID: 3)
+2022-08-19 11:12:22,117 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:12:22,117 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:12:22,177 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:12:22,442 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:12:22,442 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 410, CreateTime = 1660896737669, serialized key size = -1, serialized value size = 96, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 1080636, Used Service: DATA, Price: 32418, UID: 1)
+2022-08-19 11:12:23,203 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:12:23,203 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:12:23,315 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:12:23,642 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:12:23,642 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 411, CreateTime = 1660896739068, serialized key size = -1, serialized value size = 95, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 879746, Used Service: DATA, Price: 26391, UID: 2)
+2022-08-19 11:12:24,422 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:12:24,422 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:12:24,478 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:12:25,742 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:26,743 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:27,744 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:28,747 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:29,748 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:30,748 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:31,758 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:32,231 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:12:32,231 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:12:32,231 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 412, CreateTime = 1660896751997, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 3, Used Service: SMS, Price: 3, UID: 2)
+2022-08-19 11:12:33,057 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:12:33,057 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:12:33,243 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:12:34,641 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:35,642 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:36,642 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:37,643 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:38,652 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:39,654 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:40,655 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:41,660 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:42,486 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:12:42,487 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:12:42,487 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 413, CreateTime = 1660896762572, serialized key size = -1, serialized value size = 89, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 439, Used Service: VOICE, Price: 3, UID: 2)
+2022-08-19 11:12:43,112 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:12:43,112 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 11:12:43,218 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:12:43,601 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:12:43,602 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:12:43,602 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 414, CreateTime = 1660896763404, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 3, Used Service: SMS, Price: 3, UID: 1)
+2022-08-19 11:12:44,335 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:12:44,335 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:12:44,396 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:12:45,672 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:46,672 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:47,673 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:48,673 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:49,673 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:50,676 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:51,678 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:52,678 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:53,683 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:54,683 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:55,684 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:56,684 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:57,684 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:58,696 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:12:59,706 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:13:00,707 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:13:01,718 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:13:02,727 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:13:03,727 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:13:04,731 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:13:05,061 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:13:05,062 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:13:05,062 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 415, CreateTime = 1660896764531, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 3, Used Service: SMS, Price: 3, UID: 3)
+2022-08-19 11:13:05,649 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:13:05,649 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:13:05,704 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:13:06,967 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:13:07,968 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:13:08,982 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:13:09,983 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:13:10,984 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:13:11,984 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:13:12,985 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:13:13,985 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:13:14,986 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:14:54,158 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:14:55,171 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:14:56,175 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:14:57,191 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:14:57,290 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:14:57,345 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:14:57,345 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:14:57,346 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 11:14:57,349 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:14:57,349 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 416, CreateTime = 1660896785929, serialized key size = -1, serialized value size = 95, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5398849442, Used Amount: 670296, Used Service: DATA, Price: 20106, UID: 2)
+2022-08-19 11:14:58,224 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:14:58,225 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:14:58,360 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:14:58,557 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:14:58,557 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 417, CreateTime = 1660896817789, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 3, Used Service: SMS, Price: 3, UID: 1)
+2022-08-19 11:14:59,435 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:14:59,435 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:14:59,497 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:14:59,681 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:14:59,681 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 418, CreateTime = 1660896818868, serialized key size = -1, serialized value size = 85, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 3, Used Service: SMS, Price: 3, UID: 1)
+2022-08-19 11:15:00,408 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:15:00,408 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> SMS <------
+2022-08-19 11:15:00,561 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:15:00,806 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 11:15:00,806 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 419, CreateTime = 1660896832147, serialized key size = -1, serialized value size = 95, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5367085824, Used Amount: 691880, Used Service: DATA, Price: 20754, UID: 3)
+2022-08-19 11:15:01,413 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 11:15:01,414 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> DATA <------
+2022-08-19 11:15:01,533 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Datas sent to Oracle Database
+2022-08-19 11:15:02,739 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:03,739 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:04,740 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:05,741 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:06,741 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:07,742 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:08,743 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:09,743 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:10,744 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:11,751 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:12,752 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:13,767 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:14,767 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:15,768 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:16,768 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:17,768 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:18,768 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:19,768 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:20,770 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:21,770 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 11:15:22,770 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:51:14,254 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:51:15,265 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:51:16,267 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:51:17,275 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:51:18,267 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:51:18,331 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:51:18,332 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:51:18,332 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:51:18,332 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:51:18,333 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:51:18,333 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:51:18,333 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:51:18,333 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:51:18,334 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:51:18,334 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:51:18,334 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:51:18,334 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:51:18,339 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 12:51:18,339 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 451, CreateTime = 1660898578908, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 2691, Used Service: VOICE, Price: 22, UID: 1)
+2022-08-19 12:51:19,398 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 12:51:19,398 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 12:51:49,943 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:51:50,957 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:51:51,961 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:51:52,970 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:51:53,970 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:51:54,971 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:51:55,985 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:51:56,987 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:51:58,001 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:51:59,006 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:00,018 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:01,031 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:02,035 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:03,039 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:04,043 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:05,049 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:06,064 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:07,065 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:08,072 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:09,077 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:10,082 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:11,083 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:12,085 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:13,089 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:14,089 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:15,092 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:16,097 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:17,104 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:18,119 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:19,134 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:20,139 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:21,151 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:22,152 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:52:22,866 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:52:22,922 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:52:22,922 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:52:22,922 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:52:22,922 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:52:22,923 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:52:22,923 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:52:22,923 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:52:22,923 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:52:22,923 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:52:22,924 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:52:22,924 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:52:22,924 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:52:22,927 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 12:52:22,928 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 451, CreateTime = 1660898578908, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 2691, Used Service: VOICE, Price: 22, UID: 1)
+2022-08-19 12:52:25,564 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 12:52:25,564 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 12:53:02,219 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:03,235 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:04,236 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:05,241 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:06,242 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:07,242 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:08,247 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:09,252 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:10,255 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:11,261 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:12,266 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:13,272 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:14,279 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:15,293 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:16,297 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:17,301 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:18,306 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:19,312 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:20,315 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:21,327 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:22,331 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:23,333 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:24,339 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:25,342 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:26,349 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:27,356 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:28,364 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:29,367 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:30,377 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:31,389 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:32,394 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:33,401 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:34,411 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:35,418 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:36,421 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:37,432 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:38,434 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:39,437 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:40,442 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:41,442 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:53:41,980 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:53:42,034 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:53:42,034 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:53:42,034 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:53:42,035 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:53:42,035 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:53:42,035 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:53:42,035 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:53:42,036 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:53:42,036 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:53:42,036 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:53:42,036 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:53:42,036 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:53:42,040 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 12:53:42,040 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 451, CreateTime = 1660898578908, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 2691, Used Service: VOICE, Price: 22, UID: 1)
+2022-08-19 12:53:45,151 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 12:53:45,151 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
+2022-08-19 12:55:11,221 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:55:12,237 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:55:13,245 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:55:14,261 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] No message to read
+2022-08-19 12:55:14,403 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:55:14,463 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:55:14,464 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:55:14,464 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:55:14,464 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:55:14,464 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:55:14,464 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:55:14,465 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:55:14,465 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:55:14,465 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:55:14,466 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:55:14,466 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:55:14,466 INFO c.i.i.e.k.m.UsageMessageDeserializer [main] Deserializing...
+2022-08-19 12:55:14,470 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Message received
+2022-08-19 12:55:14,470 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ConsumerRecord(topic = eyeCell, partition = 0, leaderEpoch = 9, offset = 451, CreateTime = 1660898578908, serialized key size = -1, serialized value size = 91, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = MSISDN:5513852246, Used Amount: 2691, Used Service: VOICE, Price: 22, UID: 1)
+2022-08-19 12:55:15,181 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] Oracle Database connected
+2022-08-19 12:55:15,181 INFO c.i.i.e.U.m.SF_UpdateOracledbMethod [main] ------> VOICE <------
