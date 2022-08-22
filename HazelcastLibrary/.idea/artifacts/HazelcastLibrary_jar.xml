@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="HazelcastLibrary:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/HazelcastLibrary_jar</output-path>
-    <root id="archive" name="HazelcastLibrary.jar">
-      <element id="module-output" name="HazelcastLibrary" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/hazelcast/hazelcast-all/4.2.5/hazelcast-all-4.2.5.jar" path-in-jar="/" />
-    </root>
-  </artifact>
-</component>
