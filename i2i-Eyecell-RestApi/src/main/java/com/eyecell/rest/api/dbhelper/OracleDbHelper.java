@@ -18,6 +18,4 @@ public class OracleDbHelper {
     public Connection getConnection() throws SQLException {
         return DriverManager.getConnection(dBurl, username, password);
     }
-
-
 }

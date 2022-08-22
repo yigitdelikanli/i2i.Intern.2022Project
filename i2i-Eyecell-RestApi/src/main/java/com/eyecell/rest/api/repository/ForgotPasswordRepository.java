@@ -49,15 +49,9 @@ public class ForgotPasswordRepository {
 
             return new ResponseEntity<>("E-mail is sent", HttpStatus.OK);
 
-        }
-
-        return new ResponseEntity("User not found", HttpStatus.BAD_REQUEST);
-
-
-
-        /*//*Encryption encryption = new Encryption();
-        encryption.Decryption(ret);
-        System.out.println(encryption.Decryption(ret));*/
-    }}
+        } else
+            return new ResponseEntity<>("User not Found", HttpStatus.BAD_REQUEST);
+    }
+}
 
 

@@ -6,7 +6,10 @@ import com.eyecell.rest.api.encryption.Encryption;
 import com.eyecell.rest.api.resource.NewSubscriber;
 import com.eyecell.rest.api.resource.Subscriber;
 import org.com.i2i.internship.EyeCell.Hazelcast.HazelcastConfiguration;
+import org.voltdb.VoltTable;
 import org.voltdb.client.*;
+import org.voltdb.types.TimestampType;
+
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
@@ -36,6 +39,30 @@ public class SubscriberRepository {
         }
         connection.close();
         return subscriberList;
+
+    }
+
+    public List<Subscriber> getSubscriber(String MSISDN) throws IOException, ProcCallException {
+        VoltDbHelper voltDbHelper = new VoltDbHelper();
+        Client client = voltDbHelper.client();
+        ClientResponse response;
+        List<Subscriber> subscriber = new ArrayList<>();
+
+        response = client.callProcedure("ShowUserInformation",MSISDN);
+        VoltTable subscriberTable = response.getResults()[0];
+        long SUBSC_ID = subscriberTable.fetchRow(0).getLong(0);
+        String _MSISDN = subscriberTable.fetchRow(0).getString(1);
+        String NAME = subscriberTable.fetchRow(0).getString(2);
+        String SURNAME = subscriberTable.fetchRow(0).getString(3);
+        String EMAIL = subscriberTable.fetchRow(0).getString(4);
+        String PASSWORD = subscriberTable.fetchRow(0).getString(5);
+        Date DATE = new Date(2022,8,19);
+        String STATUS = subscriberTable.fetchRow(0).getString(7);
+        String SECURITY_QUESTION = subscriberTable.fetchRow(0).getString(8);
+
+        subscriber.add(new Subscriber(SUBSC_ID,_MSISDN,NAME,SURNAME,EMAIL,PASSWORD,DATE,STATUS,SECURITY_QUESTION));
+
+        return  subscriber;
 
     }
 
