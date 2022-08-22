@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/font">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewUsageInfo"
+        android:layout_width="409dp"
+        android:layout_height="440dp"
+
+        android:alpha="0.7"
+        android:backgroundTint="#82D3F8"
+        app:cardCornerRadius="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.244">
+
+        <org.eazegraph.lib.charts.PieChart
+            android:id="@+id/piechartData"
+            android:layout_width="174dp"
+            android:layout_height="171dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="50dp"
+            android:padding="8dp"
+            app:egUsePieRotation="true" />
+
+        <org.eazegraph.lib.charts.PieChart
+            android:id="@+id/piechartSms"
+            android:layout_width="174dp"
+            android:layout_height="171dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="250dp"
+            android:alpha="1"
+            android:padding="8dp"
+            app:egUsePieRotation="true" />
+
+        <org.eazegraph.lib.charts.PieChart
+            android:id="@+id/piechartVoice"
+            android:layout_width="174dp"
+            android:layout_height="171dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="250dp"
+            android:padding="8dp"
+            app:egUsePieRotation="true" />
+
+        <TextView
+            android:id="@+id/textViewSms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginBottom="11dp"
+            android:text="SMS" />
+
+        <TextView
+            android:id="@+id/textViewVoice"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="11dp"
+            android:text="Sesli Konuşma" />
+
+        <TextView
+            android:id="@+id/textViewData"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="177dp"
+            android:text="Mobil Veri" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewUserInfo"
+        android:layout_width="185dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="827dp"
+        android:text="Kullanıcı Bilgileri"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonQuit"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:text="Çıkış"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/textViewUserInfo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="409dp"
+        android:layout_height="248dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="1dp"
+        android:alpha="0.6"
+        app:cardCornerRadius="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewPackageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="150dp"
+            android:text="Paket Adı"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewPhoneNumber"
+            android:layout_width="204dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="25dp"
+            android:alpha="1"
+            android:text="Telefon Numarası"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDuraiton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="180dp"
+            android:text="Kalan gün" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="82dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/projectlogo" />
+
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
