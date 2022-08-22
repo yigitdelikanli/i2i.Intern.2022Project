@@ -1,0 +1,11 @@
+com\i2i\internship\eyeCell\kafka\modul\UsageMessageConsumer.class
+com\i2i\internship\eyeCell\kafka\modul\UsageMessageDeserializer.class
+com\i2i\internship\eyeCell\kafka\method\ProducerMethod.class
+com\i2i\internship\eyeCell\kafka\modul\UsageMessageProducer.class
+com\i2i\internship\eyeCell\exampleKafka\ConsumerTest.class
+org\example\Main.class
+com\i2i\internship\eyeCell\kafka\method\ConsumerMethod.class
+com\i2i\internship\eyeCell\exampleKafka\ProducerTest.class
+com\i2i\internship\eyeCell\kafka\constants\kafkaConstants.class
+com\i2i\internship\eyeCell\kafka\modul\UsageMessage.class
+com\i2i\internship\eyeCell\kafka\modul\UsageMessageSerializer.class

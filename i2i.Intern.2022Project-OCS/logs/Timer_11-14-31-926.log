@@ -1,0 +1,8 @@
+11:14:31 [main] INFO  com.i2i.Client - MSISDN: 05398849442
+11:14:31 [main] WARN  com.i2i.Client - Location: TURKEY
+11:14:31 [main] ERROR com.i2i.Client - Service: SMS
+11:14:31 [main] FATAL com.i2i.Client - Amount: 1
+11:14:32 [main] INFO  com.i2i.Client - MSISDN: 05398849442
+11:14:32 [main] WARN  com.i2i.Client - Location: TURKEY
+11:14:32 [main] ERROR com.i2i.Client - Service: VOICE
+11:14:32 [main] FATAL com.i2i.Client - Amount: 2439
