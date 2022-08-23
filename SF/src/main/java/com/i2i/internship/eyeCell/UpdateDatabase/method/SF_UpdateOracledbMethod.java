@@ -62,7 +62,7 @@ public class SF_UpdateOracledbMethod {
                     callableStatement.setLong(4,  price);
 
                     callableStatement.execute();
-                    System.out.println("execute oldu");
+                    System.out.println("Executed");
                     logger.info("Datas sent to Oracle Database");
                 }
                 else if (usedService.equalsIgnoreCase("voice")){
@@ -74,7 +74,7 @@ public class SF_UpdateOracledbMethod {
                     callableStatement.setLong(4,  price);
 
                     callableStatement.execute();
-                    System.out.println("execute oldu");
+                    System.out.println("Executed");
                     logger.info("Datas sent to Oracle Database");
                 }
                 else if(usedService.equalsIgnoreCase("sms")){
@@ -86,7 +86,7 @@ public class SF_UpdateOracledbMethod {
                     callableStatement.setLong(4,  price);
 
                     callableStatement.execute();
-                    System.out.println("execute oldu");
+                    System.out.println("Executed");
                     logger.info("Datas sent to Oracle Database");
                 }
 
